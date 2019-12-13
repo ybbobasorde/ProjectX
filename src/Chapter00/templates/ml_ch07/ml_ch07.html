@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML-CH07</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Combining Different Models for Ensemble Learning</h2>
+        	
+        	<br><h3>Learning with ensembles</h3>
+   			<img src="data:image/png;base64, {{ ml07_plot_url1 }}">
+        	
+        	<br><h3>Combining classifiers via majority vote</h3>
+        	<br><p>Using the majority voting principle to make predictions</p>
+   			<p>{{ ml07_url1 }}</p>
+        	{% for result in ml07_url2 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	{% for result in ml07_url3 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	
+        	<br><p>Evaluating and tuning the ensemble classifier</p>
+        	<img src="data:image/png;base64, {{ ml07_plot_url2 }}">
+        	<img src="data:image/png;base64, {{ ml07_plot_url3 }}">
+        	<p>
+        	{% for result in ml07_url4 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	</p>
+   			<p>{{ ml07_url5 }}</p>
+   			<p>{{ ml07_url6 }}</p>
+        	
+        	<br><h3>Bagging – building an ensemble of classifiers from bootstrap samples</h3>
+        	<br><p>Applying bagging to classify samples in the Wine dataset</p>
+   			<p>{{ ml07_url7 }}</p>
+   			<p>{{ ml07_url8 }}</p>
+        	<img src="data:image/png;base64, {{ ml07_plot_url4 }}">
+        	
+        	<br><h3>Leveraging weak learners via adaptive boosting</h3>
+        	<br><p>Applying AdaBoost using scikit-learn</p>
+   			<p>{{ ml07_url9 }}</p>
+   			<p>{{ ml07_url10 }}</p>
+        	<img src="data:image/png;base64, {{ ml07_plot_url5 }}">
+        	
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

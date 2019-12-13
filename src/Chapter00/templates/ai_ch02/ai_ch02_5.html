@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH02-5</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Classification and regression using supervised learning</h2>
+        	<br><h3>Label Encoder</h3>
+        	<p>Label mapping:</p>
+        	{% for result in ai02_5_url1 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	<br><br>
+        	<p>Labels = {{ ai02_5_url2 }}</p>
+        	<p>Encoded values = {{ ai02_5_url3 }}</p>
+        	<br><br>
+        	<p>Encoded values = {{ ai02_5_url4 }}</p>
+        	<p>Decoded labels = {{ ai02_5_url5 }}</p>
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

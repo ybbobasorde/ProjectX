@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML-CH06-2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Learning Best Practices for Model Evaluation and Hyperparameter Tuning</h2>
+        	
+			<br><h3>Using k-fold cross-validation to assess model performance</h3>
+			<br><p>K-fold cross-validation</p>
+        	{% for result in ml06_url2 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	<br><br>
+        	<p>{{ ml06_url3 }}</p>
+        	<p>{{ ml06_url4 }}</p>
+        	<p>{{ ml06_url5 }}</p>
+        				
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/index.css') }}">
+    </head>
+    <body>
+        <h3>Machine Learning:</h3>
+        <ol start="2">
+	        <li><a href=/ml_ch02>Training Machine Learning Algorithms for Classification</a>
+	        	<ul>
+			        <li><a href=/ml_ch02_1>Implementing a perceptron learning algorithm</a></li>
+			        <li><a href=/ml_ch02_2>Adaptive linear neurons and the convergence of learning</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch02_21>Minimizing cost functions with gradient descent</a></li>
+					        <li><a href=/ml_ch02_22>Implementing an Adaptive Linear Neuron</a></li>
+					        <li><a href=/ml_ch02_23>Improving gradient descent through feature scaling</a></li>
+					        <li><a href=/ml_ch02_24>Large scale machine learning and stochastic gradient descent</a></li>
+			        	</ol>
+			        </li>
+	        	</ul>
+	        </li>
+	        <li><a href=/ml_ch03>Machine Learning Classifiers Using Scikit-Learn</a>
+	        	<ul>
+			        <li><a href=/ml_ch03_0>Training a perceptron model using the standardized training data</a></li>
+			        <li><a href=/ml_ch03_1>Modeling class probabilities via logistic regression</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch03_11>Logistic regression intuition and conditional probabilities</a></li>
+					        <li><a href=/ml_ch03_12>Learning the weights of the logistic cost function</a></li>
+					        <li><a href=/ml_ch03_13>Training a logistic regression model with scikit-learn</a></li>
+					        <li><a href=/ml_ch03_14>Tackling overfitting via regularization</a></li>
+			        	</ol>
+			        </li>
+			        <li><a href=/ml_ch03_2>Maximum margin classification with support vector machines</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch03_21>Maximum margin intuition</a></li>
+					        <li><a href=/ml_ch03_22>Dealing with the nonlinearly separable case using slack variables</a></li>
+			        	</ol>
+			        </li>
+			        <li><a href=/ml_ch03_3>Solving nonlinear problems using a kernel SVM</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch03_3>Using the kernel trick to find separating hyperplanes in higher dimensional space</a></li>
+			        	</ol>
+			        </li>
+			        <li><a href=/ml_ch03_4>Decision tree learning</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch03_41>Maximizing information gain – getting the most bang for the buck</a></li>
+					        <li><a href=/ml_ch03_42>Building a decision tree</a></li>
+					        <li><a href=/ml_ch03_43>Combining weak to strong learners via random forests</a></li>
+			        	</ol>
+			        </li>
+			        <li><a href=/ml_ch03_5>K-nearest neighbors – a lazy learning algorithm</a></li>
+	        	</ul>
+	        </li>
+	        <li><a href=/ml_ch04>Building Good Training Sets – Data Preprocessing</a>
+	        	<ul>
+			        <li><a href=/ml_ch04_1>Selecting meaningful features</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch04_11>Sparse solutions with L1 regularization</a></li>
+					        <li><a href=/ml_ch04_12>Sequential feature selection algorithms</a></li>
+			        	</ol>
+			        </li>
+			        <li><a href=/ml_ch04_2>Assessing feature importance with Random Forests</a></li>
+	        	</ul>
+	        </li>
+	        <li><a href=/ml_ch05>Compressing Data via Dimensionality Reduction</a>
+	        	<ul>
+			        <li><a href=/ml_ch05_1>Unsupervised dimensionality reduction via principal component analysis 128</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch05_11>Total and explained variance</a></li>
+					        <li><a href=/ml_ch05_12>Feature transformation</a></li>
+					        <li><a href=/ml_ch05_13>Principal component analysis in scikit-learn</a></li>
+			        	</ol>
+			        </li>
+			        <li><a href=/ml_ch05_2>Supervised data compression via linear discriminant analysis</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch05_21>Selecting linear discriminants for the new feature subspace</a></li>
+					        <li><a href=/ml_ch05_22>Projecting samples onto the new feature space</a></li>
+					        <li><a href=/ml_ch05_23>LDA via scikit-learn</a></li>
+			        	</ol>
+			        </li>
+			        <li><a href=/ml_ch05_3>Using kernel principal component analysis for nonlinear mappings</a>
+			        	<ol start="1">
+					        <li><a href=/ml_ch05_3>Implementing a kernel principal component analysis in Python</a>
+					        	<ul>
+							        <li><a href=/ml_ch05_31>Separating half-moon shapes</a></li>
+							        <li><a href=/ml_ch05_32>Separating concentric circles</a></li>
+							        <li><a href=/ml_ch05_33>Projecting new data points</a></li>
+							        <li><a href=/ml_ch05_34>Kernel principal component analysis in scikit-learn</a></li>
+					        	</ul>
+					        </li>
+			        	</ol>
+			        </li>
+	        	</ul>
+	        </li>
+	        <li><a href=/ml_ch06>Learning Best Practices for Model Evaluation and Hyperparameter Tuning</a>
+	        	<ul>
+			        <li><a href=/ml_ch06_1>Streamlining workflows with pipelines</a></li>
+			        <li><a href=/ml_ch06_2>Using k-fold cross-validation to assess model performance</a></li>
+			        <li><a href=/ml_ch06_3>Debugging algorithms with learning and validation curves</a></li>
+			        <li><a href=/ml_ch06_4>Fine-tuning machine learning models via grid search</a></li>
+			        <li><a href=/ml_ch06_5>Looking at different performance evaluation metrics</a></li>
+			        <li><a href=/ml_ch06_6>Plotting a receiver operating characteristic</a></li>
+	        	</ul>
+	        </li>
+	        <li><a href=/ml_ch07>Combining Different Models for Ensemble Learning</a>
+	        	<ul>
+			        <li><a href=/ml_ch07_1>Learning with ensembles</a></li>
+			        <li><a href=/ml_ch07_2>Combining classifiers via majority vote</a></li>
+			        <li><a href=/ml_ch07_3>Evaluating and tuning the ensemble classifier</a></li>
+			        <li><a href=/ml_ch07_4>Bagging – building an ensemble of classifiers from bootstrap samples</a></li>
+			        <li><a href=/ml_ch07_5>Leveraging weak learners via adaptive boosting</a></li>
+	        	</ul>
+	        </li>
+	        <li><a href="/">Applying Machine Learning To Sentiment Analysis</a></li>
+	        <li><a href=/ml_ch09>Embedding a Machine Learning Model into a Web Application</a></li>
+	        <li><a href=/ml_ch10>Predicting Continuous Target Variables with Regression Analysis</a>
+	        	<ul>
+			        <li><a href=/ml_ch10_1>Exploring the Housing Dataset</a></li>
+			        <li><a href=/ml_ch10_2>Implementing an ordinary least squares linear regression model</a></li>
+			        <li><a href=/ml_ch10_3>Fitting a robust regression model using RANSAC</a></li>
+			        <li><a href=/ml_ch10_4>Evaluating the performance of linear regression models</a></li>
+			        <li><a href=/ml_ch10_5>Using regularized methods for regression</a></li>
+			        <li><a href=/ml_ch10_6>Turning a linear regression model into a curve - polynomial regression</a></li>
+	        	</ul>
+	        </li>
+	        <li><a href=/ml_ch11>Working with Unlabeled Data – Clustering Analysis</a>
+	        	<ul>
+			        <li><a href=/ml_ch11_1>Grouping objects by similarity using k-means</a></li>
+			        <li><a href=/ml_ch11_2>Organizing clusters as a hierarchical tree</a></li>
+			        <li><a href=/ml_ch11_3>Locating regions of high density via DBSCAN</a></li>
+	        	</ul>
+	        </li>
+	        <li><a href="/">Implementing a Multi-layer Artificial Neural Network from Scratch</a></li>
+	        <li><a href="/">Parallelizing Neural Network Training with TensorFlow</a></li>
+	        <li><a href="/">Going Deeper: The Mechanics of TensorFlow</a></li>
+	        <li><a href="/">Classifying Images with Deep Convolutional Neural Networks</a></li>
+	        <li><a href="/">Modeling Sequential Data Using Recurrent Neural Networks</a></li>
+        </ol>
+        <h3>Artificial Intelligence:</h3>
+        <ol start="2">
+	        <li>Classification and regression using supervised learning
+	        	<ul>
+			        <li><a href=/ai_ch02_1>Confusion Matrix</a></li>
+			        <li><a href=/ai_ch02_2>Data Preprocessor</a></li>
+			        <li><a href=/ai_ch02_3>House Prices</a></li>
+			        <li><a href=/ai_ch02_4>Income Classifier</a></li>
+			        <li><a href=/ai_ch02_5>Label Encoder</a></li>
+			        <li><a href=/ai_ch02_6>Logistic Regression</a></li>
+			        <li><a href=/ai_ch02_7>Naive Bayes</a></li>
+			        <li><a href=/ai_ch02_8>Regressor Multivar</a></li>
+			        <li><a href=/ai_ch02_9>Regressor Singlevar</a></li>
+	        	</ul>
+	        </li>
+	        <li>Predictive analytics with ensemble learning
+	        	<ul>
+			        <li><a href=/ai_ch03_1>Class Imbalance</a></li>
+			        <li><a href=/ai_ch03_2>Decision Trees</a></li>
+			        <li><a href=/ai_ch03_3>Feature Importance</a></li>
+			        <li><a href=/ai_ch03_4>Grid Search</a></li>
+			        <li><a href=/ai_ch03_5>Random Forests</a></li>
+			        <li><a href=/ai_ch03_6>Run Grid Search</a></li>
+			        <li><a href=/ai_ch03_7>Traffic Prediction</a></li>
+	        	</ul>
+	        </li>
+	        <li>Detecting patterns with unsupervised learning
+	        	<ul>
+			        <li><a href=/ai_ch04_1>Clustering Quality</a></li>
+			        <li><a href=/ai_ch04_2>GMM Classifier</a></li>
+					<li><a href=/ai_ch04_3>KMeansy</a></li>
+					<li><a href=/ai_ch04_4>Market Segmentation</a></li>
+					<li><a href=/ai_ch04_5>Mean Shift</a></li>
+					<li><a href=/ai_ch04_6>Stocks</a></li>
+	        	</ul>
+	        </li>
+	        <li>Building recommender systems
+	        	<ul>
+			        <li><a href=/ai_ch05_1>Collaborative Filtering</a></li>
+			        <li><a href=/ai_ch05_2>Compute Scores</a></li>
+					<li><a href=/ai_ch05_3>K-Nearest Neighbors</a></li>
+					<li><a href=/ai_ch05_4>Movie Recommender</a></li>
+					<li><a href=/ai_ch05_5>Nearest Neighbor Classifier</a></li>
+					<li><a href=/ai_ch05_6>Pipeline Trainer</a></li>
+	        	</ul>
+	        </li>
+	        <li>Logic programming
+	        	<ul>
+			        <li><a href=/ai_ch06_1>Expression Matcher</a></li>
+			        <li><a href=/ai_ch06_2>Family</a></li>
+					<li><a href=/ai_ch06_3>Prime</a></li>
+					<li><a href=/ai_ch06_4>Puzzle</a></li>
+					<li><a href=/ai_ch06_5>States</a></li>
+	        	</ul>
+	        </li>
+	        <li>Heuristic search techniques
+	        	<ul>
+			        <li><a href=/ai_ch07_1>Simple AI</a>
+		        	<ol start="1">
+				        <li><a href=/ml_ch07_11>Machine Learning</a>
+				        	<ul>
+						        <li><a href=/ml_ch07_111>Classifier</a></li>
+						        <li><a href=/ml_ch07_112>Evaluation</a></li>
+						        <li><a href=/ml_ch07_113>Metrics</a></li>
+						        <li><a href=/ml_ch07_114>Models</a></li>
+						        <li><a href=/ml_ch07_115>Reinforcement Learning</a></li>
+				        	</ul>
+				        </li>
+				        <li><a href=/ml_ch07_12>Search</a>
+				        	<ul>
+						        <li><a href=/ml_ch07_121>Arc</a></li>
+						        <li><a href=/ml_ch07_122>CSP</a></li>
+						        <li><a href=/ml_ch07_123>Local</a></li>
+						        <li><a href=/ml_ch07_124>Models</a></li>
+						        <li><a href=/ml_ch07_125>Traditional</a></li>
+						        <li><a href=/ml_ch07_126>Utils</a></li>
+						        <li><a href=/ml_ch07_127>Viewers</a></li>
+						        <li><a href=/ml_ch07_128>Web Viewer Server</a></li>
+				        	</ul>
+				        </li>
+				        <li><a href=/ml_ch07_13>Environments</a></li>
+		        	</ol>
+			        </li>
+			        <li><a href=/ai_ch07_2>Coloring</a></li>
+					<li><a href=/ai_ch07_3>Constrained Problem</a></li>
+					<li><a href=/ai_ch07_4>Greedy Search</a></li>
+					<li><a href=/ai_ch07_5>Maze</a></li>
+					<li><a href=/ai_ch07_6>Puzzle</a></li>
+	        	</ul>
+	        </li>
+	        <li>Genetic algorithm
+	        	<ul>
+			        <li><a href=/ai_ch08_1>Bit Counter</a></li>
+			        <li><a href=/ai_ch08_2>Robot</a></li>
+					<li><a href=/ai_ch08_3>Symbol Regression</a></li>
+					<li><a href=/ai_ch08_4>Visualization</a></li>
+	        	</ul>
+	        </li>
+	        <li>Building games with Artificial Intelligence
+	        	<ul>
+			        <li><a href=/ai_ch09_1>Easy AI</a>
+			        	<ol>
+					        <li><a href=/ml_ch09_11>AI</a>
+					        	<ul>
+							        <li><a href=/ml_ch09_111>Dict TT</a></li>
+							        <li><a href=/ml_ch09_112>DUAL</a></li>
+							        <li><a href=/ml_ch09_113>Hashes</a></li>
+							        <li><a href=/ml_ch09_114>Hash TT</a></li>
+							        <li><a href=/ml_ch09_115>MT Driver</a></li>
+							        <li><a href=/ml_ch09_116>Negamax</a></li>
+							        <li><a href=/ml_ch09_117>Solving</a></li>
+							        <li><a href=/ml_ch09_118>SSS</a></li>
+							        <li><a href=/ml_ch09_119>TT</a></li>
+					        	</ul>
+					        </li>
+					        <li><a href=/ml_ch09_12>Player</a></li>
+					        <li><a href=/ml_ch09_13>Two Players Game</a></li>
+			        	</ol>		        
+			        </li>
+			        <li><a href=/ai_ch09_2>Coins</a></li>
+					<li><a href=/ai_ch09_3>Connect Four</a></li>
+					<li><a href=/ai_ch09_4>Hexapawn</a></li>
+					<li><a href=/ai_ch09_5>Tic Tac Toe</a></li>
+	        	</ul>
+	        </li>
+	        <li>Natural Language Processing
+	        	<ul>
+			        <li><a href=/ai_ch10_1>Bag Of Words</a></li>
+			        <li><a href=/ai_ch10_2>Category Predictor</a></li>
+					<li><a href=/ai_ch10_3>Gender Identifier</a></li>
+					<li><a href=/ai_ch10_4>Lemmatizer</a></li>
+					<li><a href=/ai_ch10_5>Sentiment Analyzer</a></li>
+					<li><a href=/ai_ch10_6>Stemmer</a></li>
+					<li><a href=/ai_ch10_7>Text Chunker</a></li>
+					<li><a href=/ai_ch10_8>Tokenizer</a></li>
+					<li><a href=/ai_ch10_9>Topic Modeler</a></li>
+	        	</ul>
+	        </li>
+	        <li>Probabilistic reasoning for sequential data
+	        	<ul>
+			        <li><a href=/ai_ch11_1>CRF</a></li>
+			        <li><a href=/ai_ch11_2>HMM</a></li>
+					<li><a href=/ai_ch11_3>Operator</a></li>
+					<li><a href=/ai_ch11_4>Slicer</a></li>
+					<li><a href=/ai_ch11_5>Stats Extractor</a></li>
+					<li><a href=/ai_ch11_6>Stock Market</a></li>
+					<li><a href=/ai_ch11_7>Time Series</a></li>
+	        	</ul>
+	        </li>
+	        <li>Speech recognition
+	        	<ul>
+			        <li><a href=/ai_ch12_1>Features</a>
+			        	<ol>
+					        <li><a href=/ml_ch12_11>Base</a></li>
+					        <li><a href=/ml_ch12_12>Sigproc</a></li>
+			        	</ol>		        
+			        </li>
+			        <li><a href=/ai_ch12_2>Audio Generator</a></li>
+					<li><a href=/ai_ch12_3>Audio Plotter</a></li>
+					<li><a href=/ai_ch12_4>Feature Extractor</a></li>
+					<li><a href=/ai_ch12_5>Frequency Transformer</a></li>
+					<li><a href=/ai_ch12_6>Speech Recognizer</a></li>
+					<li><a href=/ai_ch12_7>Synthesizer</a></li>
+	        	</ul>
+	        </li>
+	        <li>Object detection and tracking
+	        	<ul>
+			        <li><a href=/ai_ch13_1>Background Subtraction</a></li>
+					<li><a href=/ai_ch13_2>Camshift</a></li>
+					<li><a href=/ai_ch13_3>Colorspaces</a></li>
+					<li><a href=/ai_ch13_4>Eye Detector</a></li>
+					<li><a href=/ai_ch13_5>Face Detector</a></li>
+					<li><a href=/ai_ch13_6>Frame Diff</a></li>
+					<li><a href=/ai_ch13_7>Optical Flow</a></li>
+	        	</ul>
+	        </li>
+	        <li>Artificial neural networks
+	        	<ul>
+			        <li><a href=/ai_ch14_1>Character Visualizer</a></li>
+					<li><a href=/ai_ch14_2>Multilayer Neural Network</a></li>
+					<li><a href=/ai_ch14_3>OCR</a></li>
+					<li><a href=/ai_ch14_4>Perceptron Classifier</a></li>
+					<li><a href=/ai_ch14_5>Recurrent Neural Network</a></li>
+					<li><a href=/ai_ch14_6>Simple Neural Network</a></li>
+					<li><a href=/ai_ch14_7>Vector Quantizer</a></li>
+	        	</ul>
+	        </li>
+	        <li>Reinforcement learning
+	        	<ul>
+			        <li><a href=/ai_ch15_1>Balancer</a></li>
+					<li><a href=/ai_ch15_2>Run Environment</a></li>
+	        	</ul>
+	        </li>
+	        <li>Deep learning with convolutional neural networks
+	        	<ul>
+			        <li><a href=/ai_ch16_1>CNN</a></li>
+					<li><a href=/ai_ch16_2>Linear Regression</a></li>
+					<li><a href=/ai_ch16_2>Single Layer</a></li>
+	        	</ul>
+	        </li>
+	    </ol>
+    </body>
+</html>

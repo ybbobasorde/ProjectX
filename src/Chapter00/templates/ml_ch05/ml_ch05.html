@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML-CH05</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Compressing Data via Dimensionality Reduction</h2>
+        	<br><h3>Unsupervised dimensionality reduction via principal component analysis 128</h3>
+        	<br><p>Total and explained variance</p>
+   			<img src="data:image/png;base64, {{ ml05_plot_url1 }}">
+        	<br><p>Feature transformation</p>
+   			<img src="data:image/png;base64, {{ ml05_plot_url2 }}">
+        	<br><p>Principal component analysis in scikit-learn</p>
+        	<img src="data:image/png;base64, {{ ml05_plot_url3 }}">
+        	<img src="data:image/png;base64, {{ ml05_plot_url4 }}">
+   			<br>
+   			<img src="data:image/png;base64, {{ ml05_plot_url5 }}">
+        	<img src="data:image/png;base64, {{ ml05_plot_url6 }}">
+        	<br><br><h3>Supervised data compression via linear discriminant analysis</h3>
+        	<br><p>Selecting linear discriminants for the new feature subspace</p>
+   			<img src="data:image/png;base64, {{ ml05_plot_url7 }}">
+   			<br><p>Projecting samples onto the new feature space</p>
+   			<img src="data:image/png;base64, {{ ml05_plot_url8 }}">
+   			<br><p>LDA via scikit-learn</p>
+        	<img src="data:image/png;base64, {{ ml05_plot_url9 }}">
+        	<img src="data:image/png;base64, {{ ml05_plot_url10 }}">
+        	<br><br><h3>Using kernel principal component analysis for nonlinear mappings</h3>
+   			<br><p>Implementing a kernel principal component analysis in Python</p>
+   			<br><br><p><b>Separating half-moon shapes</b></p>
+   			<img src="data:image/png;base64, {{ ml05_plot_url11 }}">
+        	<img src="data:image/png;base64, {{ ml05_plot_url12 }}">
+   			<img src="data:image/png;base64, {{ ml05_plot_url13 }}">
+   			<br><br><p><b>Separating concentric circles</b></p>
+   			<img src="data:image/png;base64, {{ ml05_plot_url14 }}">
+        	<img src="data:image/png;base64, {{ ml05_plot_url15 }}">
+   			<img src="data:image/png;base64, {{ ml05_plot_url16 }}">
+   			<br><p>Projecting new data points</p>
+   			<img src="data:image/png;base64, {{ ml05_plot_url17 }}">
+   			<br><p>Kernel principal component analysis in scikit-learn</p>
+        	<img src="data:image/png;base64, {{ ml05_plot_url18 }}">
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

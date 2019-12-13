@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML-CH04</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Building Good Training Sets – Data Preprocessing</h2>
+        	<br><h3>Partitioning a dataset into a separate training and test set</h3>
+			<p>Class labels {{ ml04_url1 }}</p>
+			<p>standardized: {{ ml04_url2 }}</p>
+			<p>normalized: {{ ml04_url3 }}</p>
+			<p>Training accuracy: {{ ml04_url4 }}</p>
+			<p>Test accuracy: {{ ml04_url5 }}</p>
+        	<br><h3>Selecting meaningful features</h3>
+        	<br><p>Sparse solutions with L1 regularization</p>
+   			<img src="data:image/png;base64, {{ ml04_plot_url1 }}">
+        	<br><p>Sequential feature selection algorithms</p>
+   			<img src="data:image/png;base64, {{ ml04_plot_url2 }}">
+			<p>{{ ml04_url6 }}</p>
+			<p>Training accuracy: {{ ml04_url7 }}</p>
+			<p>Test accuracy: {{ ml04_url8 }}</p>
+			<p>Training accuracy: {{ ml04_url9 }}</p>
+			<p>Test accuracy: {{ ml04_url10 }}</p>
+			<p>
+        	{% for result in ml04_url11 %}
+        		{{ result }}<br>
+        	{% endfor %}   			
+   			</p>
+        	<br><br><h3>Assessing feature importance with Random Forests</h3>
+        	<img src="data:image/png;base64, {{ ml04_plot_url3 }}">
+			<p>Number of samples that meet this criterion: {{ ml04_url12 }}</p>
+			<p>
+        	{% for result in ml04_url13 %}
+        		{{ result }}<br>
+        	{% endfor %}   			
+   			</p>
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

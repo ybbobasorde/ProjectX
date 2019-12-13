@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH02-4</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Classification and regression using supervised learning</h2>
+        	<br><h3>Income Classifier</h3>
+        	<p>F1 score: {{ ai02_4_url1 }} %</p>
+        	
+        	<p>Input data encoded:</p>
+        	{% for result in ai02_4_url2 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	<br><br>
+
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

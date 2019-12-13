@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML-CH07-2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Combining Different Models for Ensemble Learning</h2>
+        	
+        	<br><h3>Combining classifiers via majority vote</h3>
+        	<br><p>Using the majority voting principle to make predictions</p>
+   			<p>{{ ml07_url1 }}</p>
+        	{% for result in ml07_url2 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	{% for result in ml07_url3 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

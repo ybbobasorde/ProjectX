@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML-CH12</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Implementing a Multi-layer Artificial Neural Network from Scratch</h2>
+        	
+        	<br><h3>Classifying handwritten digits</h3>
+        	<br><p>Obtaining the MNIST dataset</p>
+   			<p>{{ ml12_url1 }}</p>
+   			<p>{{ ml12_url2 }}</p>
+        	<br><p>- Visualize the first digit of each class:</p>
+   			<img src="data:image/png;base64, {{ ml12_plot_url1 }}">
+        	<br><p>- Visualize 25 different versions of "7":</p>
+   			<img src="data:image/png;base64, {{ ml12_plot_url2 }}">
+        	<br><p>Implementing a multi-layer perceptron</p>
+   			<p>{{ ml12_url3 }}</p>
+   			<p>{{ ml12_url4 }}</p>
+   			<img src="data:image/png;base64, {{ ml12_plot_url3 }}">
+   			<img src="data:image/png;base64, {{ ml12_plot_url4 }}">
+   			<p>{{ ml12_url5 }}</p>
+   			<img src="data:image/png;base64, {{ ml12_plot_url5 }}">
+   			
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

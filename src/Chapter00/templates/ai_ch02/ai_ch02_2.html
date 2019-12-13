@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH02-2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Classification and regression using supervised learning</h2>
+        	<br><h3>Data Preprocessor</h3>
+        	<p>Binarized data:</p>
+        	{% for result in ai02_2_url1 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	<br><br>
+        	<p><b>BEFORE:</b></p>
+        	<p>Mean = {{ ai02_2_url2 }}</p>
+        	<p>Standard deviation = {{ ai02_2_url3 }}</p>
+        	<br><br>
+        	<p><b>AFTER:</b></p>
+        	<p>Mean = {{ ai02_2_url4 }}</p>
+        	<p>Standard deviation = {{ ai02_2_url5 }}</p>
+        	<br><br>
+        	<p>Min max scaled data:</p>
+        	{% for result in ai02_2_url6 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	<br><br>
+        	<p>L1 normalized data:</p>
+        	{% for result in ai02_2_url7 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	<br><br>
+        	<p>L2 normalized data:</p>
+        	{% for result in ai02_2_url8 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

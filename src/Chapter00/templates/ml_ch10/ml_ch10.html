@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML-CH10</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Predicting Continuous Target Variables with Regression Analysis</h2>
+        	
+        	<br><h3>Exploring the Housing Dataset</h3>
+        	<br><p>Visualizing the important characteristics of a dataset</p>
+   			<img src="data:image/png;base64, {{ ml10_plot_url1 }}">
+   			<img src="data:image/png;base64, {{ ml10_plot_url2 }}">
+        	
+        	<br><h3>Implementing an ordinary least squares linear regression model</h3>
+        	<br><p>Solving regression for regression parameters with gradient descent</p>
+        	<img src="data:image/png;base64, {{ ml10_plot_url3 }}">
+        	<img src="data:image/png;base64, {{ ml10_plot_url4 }}">
+   			<p>{{ ml10_url1 }}</p>
+   			<p>{{ ml10_url2 }}</p>
+   			<p>{{ ml10_url3 }}</p>
+        	<br><p>Estimating the coefficient of a regression model via scikit-learn</p>
+   			<p>{{ ml10_url4 }}</p>
+   			<p>{{ ml10_url5 }}</p>
+   			<img src="data:image/png;base64, {{ ml10_plot_url5 }}">
+   			<p>{{ ml10_url6 }}</p>
+   			<p>{{ ml10_url7 }}</p>
+
+        	<br><h3>Fitting a robust regression model using RANSAC</h3>
+        	<img src="data:image/png;base64, {{ ml10_plot_url6 }}">
+   			<p>{{ ml10_url8 }}</p>
+   			<p>{{ ml10_url9 }}</p>
+   			
+        	<br><h3>Evaluating the performance of linear regression models</h3>
+   			<img src="data:image/png;base64, {{ ml10_plot_url7 }}">
+   			<p>{{ ml10_url10 }}</p>
+   			<p>{{ ml10_url11 }}</p>
+   			
+        	<br><h3>Using regularized methods for regression</h3>
+   			<p>{{ ml10_url12 }}</p>
+   			<p>{{ ml10_url13 }}</p>
+   			<p>{{ ml10_url14 }}</p>
+   			
+        	<br><h3>Turning a linear regression model into a curve - polynomial regression</h3>
+   			<img src="data:image/png;base64, {{ ml10_plot_url8 }}">
+   			<p>{{ ml10_url15 }}</p>
+   			<p>{{ ml10_url16 }}</p>
+			<br><p>Modeling nonlinear relationships in the Housing Dataset</p>
+			<img src="data:image/png;base64, {{ ml10_plot_url9 }}">
+			<img src="data:image/png;base64, {{ ml10_plot_url10 }}">
+			<br><p>Dealing with nonlinear relationships using random forests</p>
+			<br><p>- Decision tree regression</p>
+			<img src="data:image/png;base64, {{ ml10_plot_url11 }}">
+			<br><p>- Random forest regression</p>
+   			<p>{{ ml10_url17 }}</p>
+   			<p>{{ ml10_url18 }}</p>
+   			<img src="data:image/png;base64, {{ ml10_plot_url12 }}">
+        	
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

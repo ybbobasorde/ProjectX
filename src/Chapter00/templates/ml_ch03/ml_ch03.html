@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ML-CH03</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Machine Learning Classifiers Using Scikit-Learn</h2>
+        	<br><h3>First steps with scikit-learn</h3>
+        	<p>Class labels: {{ ml03_url1 }}</p>
+        	<p>Labels counts in : {{ ml03_url2 }}</p>
+        	<p>Labels counts in y_train: {{ ml03_url3 }}</p>
+        	<p>Labels counts in y_test: {{ ml03_url4 }}</p>
+        	<p>{{ ml03_url5 }}</p>
+        	<p>{{ ml03_url6 }}</p>
+        	<p>{{ ml03_url7 }}</p>
+        	<br><p>Training a perceptron model using the standardized training data</p>
+    		<img src="data:image/png;base64, {{ ml03_plot_url1 }}">
+        	<br><br><h3>Modeling class probabilities via logistic regression</h3>
+        	<br><p>Logistic regression intuition and conditional probabilities</p>
+   			<img src="data:image/png;base64, {{ ml03_plot_url2 }}">
+        	<br><p>Learning the weights of the logistic cost function</p>
+   			<img src="data:image/png;base64, {{ ml03_plot_url3 }}"><img src="data:image/png;base64, {{ ml03_plot_url4 }}">
+        	<br><p>Training a logistic regression model with scikit-learn</p>
+     		<img src="data:image/png;base64, {{ ml03_plot_url5 }}">
+        	<br><p>Tackling overfitting via regularization</p>
+     		<img src="data:image/png;base64, {{ ml03_plot_url6 }}">
+        	<br><br><h3>Maximum margin classification with support vector machines</h3>
+        	<br><p>Maximum margin intuition</p>
+       		<img src="data:image/png;base64, {{ ml03_plot_url7 }}">
+        	<br><p>Dealing with the nonlinearly separable case using slack variables</p>
+    		<img src="data:image/png;base64, {{ ml03_plot_url8 }}">
+        	<br><br><h3>Solving nonlinear problems using a kernel SVM</h3>
+        	<br><p>Using the kernel trick to find separating hyperplanes in higher dimensional space</p>
+        	<img src="data:image/png;base64, {{ ml03_plot_url9 }}"><img src="data:image/png;base64, {{ ml03_plot_url10 }}"><img src="data:image/png;base64, {{ ml03_plot_url11 }}">
+        	<br><br><h3>Decision tree learning</h3>
+        	<br><p>Maximizing information gain – getting the most bang for the buck</p>
+        	<img src="data:image/png;base64, {{ ml03_plot_url12 }}">
+        	<br><p>Building a decision tree</p>
+        	<img src="data:image/png;base64, {{ ml03_plot_url13 }}">
+        	<br><p>Combining weak to strong learners via random forests</p>
+        	<img src="data:image/png;base64, {{ ml03_plot_url14 }}">
+        	<br><br><h3>K-nearest neighbors – a lazy learning algorithm</h3>
+        	<img src="data:image/png;base64, {{ ml03_plot_url15 }}">
+        	<br><br><a href="/">Home</a>
+        </div>
+    </body>
+</html>

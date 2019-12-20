@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH03-4</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Predictive analytics with ensemble learning</h2>
+        	<br><h3>Grid Search</h3>
+			<p>
+        	{% for result_4_url1 in ai03_4_url1 %}
+        		{{ result_4_url1 }}<br><br>
+        		{{ ai03_4_url2 }} <br>
+	        	{% for result_4_url11 in ai03_4_url11 %}
+	        		{{ result_4_url11 }}<br>
+	        	{% endfor %}<br>
+	        	{{ ai03_4_url3 }} <br><br>
+	        	{{ ai03_4_url4 }} <br><br>
+	        	{{ ai03_4_url5 }} <br><br>
+        	{% endfor %}   			
+   			</p>	
+
+        	<br><br><a href="/#ai_ch03_4">Home</a>
+        </div>
+    </body>
+</html>

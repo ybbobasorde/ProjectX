@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-M01-CH01-1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Markov Decision Process (MDP)</h2>
+        	<p>Q :<br>
+        	{% for result in ai01_1_url1 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	</p>		        	
+        	<p>Normed Q :<br>
+        	{% for result in ai01_1_url2 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	</p>		        	
+        	
+        	<br><br><a href="/#ai_m01_ch01_1">Home</a>
+        </div>
+    </body>
+</html>

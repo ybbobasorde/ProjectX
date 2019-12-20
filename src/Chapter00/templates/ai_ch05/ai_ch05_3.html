@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH05-3</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Building recommender systems</h2>
+        	<br><h3>K-Nearest Neighbors</h3>
+
+			<p>K Nearest Neighbors:<br>
+        	{% for result in ai05_3_url1 %}
+        		{{ result }}<br>
+        	{% endfor %}<br>
+   			</p>
+   			
+        	<img src="data:image/png;base64, {{ ai05_3_plot_url1 }}">
+        	<img src="data:image/png;base64, {{ ai05_3_plot_url2 }}">
+
+        	<br><br><a href="/#ai_ch05_3">Home</a>
+        </div>
+    </body>
+</html>

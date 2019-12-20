@@ -1,3 +1,6 @@
+#
+# Classification and regression using supervised learning : Label Encoder
+#
 from sklearn import preprocessing
 
 # Sample input labels

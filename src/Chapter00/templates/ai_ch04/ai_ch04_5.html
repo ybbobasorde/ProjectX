@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH04-5</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Detecting patterns with unsupervised learning</h2>
+        	<br><h3>Mean Shift</h3>
+
+			<p>Centers of clusters:<br>
+        	{% for result in ai04_5_url1 %}
+        		{{ result }}<br>
+        	{% endfor %}<br>
+        	Number of clusters in input data =     			
+        	{{ ai04_5_url2 }}	
+   			</p>	
+   			
+        	<img src="data:image/png;base64, {{ ai04_5_plot_url1 }}">
+
+        	<br><br><a href="/#ai_ch04_5">Home</a>
+        </div>
+    </body>
+</html>

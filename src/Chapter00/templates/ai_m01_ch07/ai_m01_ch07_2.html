@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-M01-CH07-2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>K-means clustering with Mini-Batch Shuffling</h2>
+        	<p>{{ ai07_2_url1 }}</p>
+        	<p>initial order: {{ ai07_2_url2 }}</p>    	
+        	<p>shuffled: {{ ai07_2_url3 }}</p>   
+        	<p>The geometric centers or centroids:<br>
+        	{% for result in ai07_2_url4 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	</p>
+        	<img src="data:image/png;base64, {{ ai07_plot_url1 }}">		        	
+        	<p>The predictions:</p>
+        	<p>{{ ai07_2_url5 }}</p>
+        	
+        	<br><br><a href="/#ai_m01_ch07_2">Home</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH12-3</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Speech recognition</h2>
+        	<br><h3>Audio Plotter</h3>
+        	
+        	<p>Signal shape: {{ ai12_3_url1 }}</p>
+        	<p>Datatype: {{ ai12_3_url2 }}</p>
+        	<p>Signal duration: {{ ai12_3_url3 }}</p>
+        	
+        	<img src="data:image/png;base64, {{ ai12_plot_url1 }}">
+
+        	<br><br><a href="/#ai_ch12_3">Home</a>
+        </div>
+    </body>
+</html>

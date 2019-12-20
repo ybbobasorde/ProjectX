@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH03-5</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Predictive analytics with ensemble learning</h2>
+        	<br><h3>Random Forests</h3>
+        	<img src="data:image/png;base64, {{ ai03_5_plot_url1 }}">
+        	<img src="data:image/png;base64, {{ ai03_5_plot_url2 }}">	
+			<p>
+        	{{ ai03_5_url1 }}<br>
+        	{{ ai03_5_url2 }}<br>
+        	{{ ai03_5_url3 }}<br><br>
+        	{{ ai03_5_url4 }}<br>
+        	{{ ai03_5_url5 }}<br>
+        	{{ ai03_5_url6 }}<br><br>
+        	{{ ai03_5_url7 }}<br>
+        	{{ ai03_5_url8 }}<br>
+        	{% for result in ai03_5_url9 %}
+        		{{ result }} <br>
+        	{% endfor %}
+   			</p>
+        	<img src="data:image/png;base64, {{ ai03_5_plot_url3 }}">	
+
+        	<br><br><a href="/#ai_ch03_5">Home</a>
+        </div>
+    </body>
+</html>

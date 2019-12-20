@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH11-5</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Probabilistic reasoning for sequential data</h2>
+        	<br><h3>Stats Extractor</h3>
+        	Maximum values for each dimension: <br>{{ ai11_5_url1 }} <br><br>
+        	Minimum values for each dimension: <br>{{ ai11_5_url2 }} <br><br>
+        	Overall mean: <br>{{ ai11_5_url3 }} <br><br>
+        	Row-wise mean: <br>{{ ai11_5_url4 }} <br><br>
+        	Correlation coefficients: <br>{{ ai11_5_url5 }} <br><br>
+        	<img src="data:image/png;base64, {{ ai11_plot_url1 }}">
+        	<img src="data:image/png;base64, {{ ai11_plot_url2 }}">
+
+        	<br><br><a href="/#ai_ch11_5">Home</a>
+        </div>
+    </body>
+</html>

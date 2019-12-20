@@ -1,12 +1,11 @@
+#
+# Classification and regression using supervised learning : Naive Bayes
+#
 import numpy as np
-from io import BytesIO
-from base64 import b64encode
 from sklearn.naive_bayes import GaussianNB 
-#from sklearn.model_selection import cross_validate
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
-
-from ai_ch02.ai_ch02_util import visualize_classifier
+from ai_utils import visualize_classifier
 
 # Input file containing data
 input_file = 'data/ai_ch02/data_multivar_nb.txt'
@@ -29,14 +28,7 @@ accuracy = 100.0 * (y == y_pred).sum() / X.shape[0]
 print("Accuracy of Naive Bayes classifier =", round(accuracy, 2), "%")
 
 # Visualize the performance of the classifier
-plt = visualize_classifier(classifier, X, y)
-
-img = BytesIO()
-plt.savefig(img, dpi=300)
-plt.close()
-img.seek(0)
-    
-ai02_plot_url2 = b64encode(img.getvalue()).decode('ascii')
+ai02_plot_url2 = visualize_classifier(classifier, X, y)
 
 ###############################################
 # Cross validation 
@@ -52,14 +44,7 @@ accuracy = 100.0 * (y_test == y_test_pred).sum() / X_test.shape[0]
 print("Accuracy of the new classifier =", round(accuracy, 2), "%")
 
 # Visualize the performance of the classifier
-plt = visualize_classifier(classifier_new, X_test, y_test)
-
-img = BytesIO()
-plt.savefig(img, dpi=300)
-plt.close()
-img.seek(0)
-    
-ai02_plot_url3 = b64encode(img.getvalue()).decode('ascii')
+ai02_plot_url3 = visualize_classifier(classifier_new, X_test, y_test)
 
 ###############################################
 # Scoring functions
@@ -80,4 +65,3 @@ print("Recall: " + str(round(100*recall_values.mean(), 2)) + "%")
 f1_values = cross_val_score(classifier, 
         X, y, scoring='f1_weighted', cv=num_folds)
 print("F1: " + str(round(100*f1_values.mean(), 2)) + "%")
-

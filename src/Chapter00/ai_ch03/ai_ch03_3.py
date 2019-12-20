@@ -1,7 +1,10 @@
+#
+# Predictive analytics with ensemble learning: Feature Importance
+#
 import numpy as np
+import matplotlib.pyplot as plt
 from io import BytesIO
 from base64 import b64encode
-import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import AdaBoostRegressor
 from sklearn import datasets

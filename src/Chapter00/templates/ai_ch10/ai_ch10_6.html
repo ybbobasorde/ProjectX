@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH10-6</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Natural Language Processing</h2>
+        	<br><h3>Stemmer</h3>
+
+			<p>
+			{{ ai10_6_url1 }}<br>
+			{{ ai10_6_url2 }}<br>
+        	{% for result in ai10_6_url3 %}
+        		{{ result }}<br>
+        	{% endfor %}			
+			</p>
+
+        	<br><br><a href="/#ai_ch10_6">Home</a>
+        </div>
+    </body>
+</html>

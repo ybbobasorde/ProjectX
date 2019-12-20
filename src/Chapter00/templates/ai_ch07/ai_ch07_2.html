@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH07-2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Heuristic search techniques</h2>
+        	<br><h3>Coloring</h3>
+
+			<p>Color mapping:<br>
+        	{% for result in ai07_2_url1 %}
+        		{{ result }}<br>
+        	{% endfor %}			
+			</p>
+   			
+        	<br><br><a href="/#ai_ch07_2">Home</a>
+        </div>
+    </body>
+</html>

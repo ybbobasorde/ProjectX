@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-M01-CH06-1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>K-means clustering</h2>
+        	<p>{{ ai06_1_url1 }}</p>
+        	<p>{{ ai06_1_url2 }}</p>    	
+        	<p>The geometric centers or centroids:<br>
+        	{% for result in ai06_1_url3 %}
+        		{{ result }}<br>
+        	{% endfor %}
+        	</p>
+        	<img src="data:image/png;base64, {{ ai06_plot_url1 }}">		        	
+        	<p>The predictions:</p>
+        	<p>{{ ai06_1_url4 }}</p>
+        	
+        	<br><br><a href="/#ai_m01_ch06_1">Home</a>
+        </div>
+    </body>
+</html>

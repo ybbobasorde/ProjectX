@@ -1,11 +1,13 @@
+#
+# Classification and regression using supervised learning : Regressor Singlevar
+#
 import pickle
-
 import numpy as np
+import sklearn.metrics as sm
+import matplotlib.pyplot as plt
 from io import BytesIO
 from base64 import b64encode
 from sklearn import linear_model
-import sklearn.metrics as sm
-import matplotlib.pyplot as plt
 
 # Input file containing data
 input_file = 'data/ai_ch02/data_singlevar_regr.txt' 
@@ -61,7 +63,7 @@ print("R2 score =", round(sm.r2_score(y_test, y_test_pred), 2))
 ai02_9_url5 = round(sm.r2_score(y_test, y_test_pred), 2)
 
 # Model persistence
-output_model_file = 'model.pkl'
+output_model_file = 'data/ai_ch02/model.pkl'
 
 # Save the model
 with open(output_model_file, 'wb') as f:

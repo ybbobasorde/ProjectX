@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 @app.route('/ai_ch02_1')
 def ai_ch02_1():
-    from ai_ch02.ai_ch02_1 import ai02_plot_url1
+    from ai_ch02.ai_ch02_1 import ai02_1_url1, ai02_plot_url1
     return render_template(
-        'ai_ch02/ai_ch02_1.html', ai02_plot_url1=ai02_plot_url1
+        'ai_ch02/ai_ch02_1.html', ai02_1_url1=ai02_1_url1, ai02_plot_url1=ai02_plot_url1
     )
 
 @app.route('/ai_ch02_2')
@@ -97,6 +97,219 @@ def ai_ch03_3():
     return render_template(
         'ai_ch03/ai_ch03_3.html', ai03_3_url1=ai03_3_url1, ai03_3_url2=ai03_3_url2, ai03_3_url3=ai03_3_url3,
         ai03_3_plot_url1=ai03_3_plot_url1
+    )
+
+@app.route('/ai_ch03_4')
+def ai_ch03_4():
+    from ai_ch03.ai_ch03_4 import ai03_4_url1, ai03_4_url2, ai03_4_url3, ai03_4_url4, ai03_4_url5
+    return render_template(
+        'ai_ch03/ai_ch03_4.html', ai03_4_url1=ai03_4_url1, ai03_4_url2=ai03_4_url2, ai03_4_url3=ai03_4_url3, ai03_4_url4=ai03_4_url4, ai03_4_url5=ai03_4_url5
+    )
+
+@app.route('/ai_ch03_5')
+def ai_ch03_5():
+    from ai_ch03.ai_ch03_5 import ai03_5_url1, ai03_5_url2, ai03_5_url3, ai03_5_url4, ai03_5_url5, ai03_5_url6, ai03_5_url7, ai03_5_url8, ai03_5_url9, \
+        ai03_5_plot_url1, ai03_5_plot_url2, ai03_5_plot_url3
+    return render_template(
+        'ai_ch03/ai_ch03_5.html', ai03_5_url1=ai03_5_url1, ai03_5_url2=ai03_5_url2, ai03_5_url3=ai03_5_url3, ai03_5_url4=ai03_5_url4, ai03_5_url5=ai03_5_url5,
+            ai03_5_url6=ai03_5_url6, ai03_5_url7=ai03_5_url7, ai03_5_url8=ai03_5_url8, ai03_5_url9=ai03_5_url9,
+            ai03_5_plot_url1=ai03_5_plot_url1, ai03_5_plot_url2=ai03_5_plot_url2, ai03_5_plot_url3=ai03_5_plot_url3
+    )
+
+@app.route('/ai_ch03_6')
+def ai_ch03_6():
+    from ai_ch03.ai_ch03_6 import ai03_6_url1, ai03_6_url2
+    return render_template(
+        'ai_ch03/ai_ch03_6.html', ai03_6_url1=ai03_6_url1, ai03_6_url2=ai03_6_url2
+    )
+
+#
+#
+#
+
+@app.route('/ai_ch04_1')
+def ai_ch04_1():
+    from ai_ch04.ai_ch04_1 import ai04_1_url1, ai04_1_url2, \
+    ai04_1_plot_url1
+    return render_template(
+        'ai_ch04/ai_ch04_1.html', ai04_1_url1=ai04_1_url1, ai04_1_url2=ai04_1_url2,
+        ai04_1_plot_url1=ai04_1_plot_url1
+    )
+
+@app.route('/ai_ch04_3')
+def ai_ch04_3():
+    from ai_ch04.ai_ch04_3 import ai04_3_plot_url1
+    return render_template(
+        'ai_ch04/ai_ch04_3.html', ai04_3_plot_url1=ai04_3_plot_url1
+    )
+
+@app.route('/ai_ch04_4')
+def ai_ch04_4():
+    from ai_ch04.ai_ch04_4 import ai04_4_url1, ai04_4_url2, ai04_4_url3, ai04_4_url4, \
+        ai04_4_plot_url1
+    return render_template(
+        'ai_ch04/ai_ch04_4.html', ai04_4_url1=ai04_4_url1, ai04_4_url2=ai04_4_url2, ai04_4_url3=ai04_4_url3, ai04_4_url4=ai04_4_url4,
+            ai04_4_plot_url1=ai04_4_plot_url1
+    )
+
+@app.route('/ai_ch04_5')
+def ai_ch04_5():
+    from ai_ch04.ai_ch04_5 import ai04_5_url1, ai04_5_url2, \
+        ai04_5_plot_url1
+    return render_template(
+        'ai_ch04/ai_ch04_5.html', ai04_5_url1=ai04_5_url1, ai04_5_url2=ai04_5_url2,
+            ai04_5_plot_url1=ai04_5_plot_url1
+    )
+
+#
+#
+#
+
+@app.route('/ai_ch05_3')
+def ai_ch05_3():
+    from ai_ch05.ai_ch05_3 import ai05_3_url1, \
+        ai05_3_plot_url1, ai05_3_plot_url2
+    return render_template(
+        'ai_ch05/ai_ch05_3.html', ai05_3_url1=ai05_3_url1,
+            ai05_3_plot_url1=ai05_3_plot_url1, ai05_3_plot_url2=ai05_3_plot_url2
+    )
+
+@app.route('/ai_ch05_5')
+def ai_ch05_5():
+    from ai_ch05.ai_ch05_5 import ai05_5_url1, \
+        ai05_5_plot_url1, ai05_5_plot_url2, ai05_5_plot_url3, ai05_5_plot_url4
+    return render_template(
+        'ai_ch05/ai_ch05_5.html', ai05_5_url1=ai05_5_url1,
+            ai05_5_plot_url1=ai05_5_plot_url1, ai05_5_plot_url2=ai05_5_plot_url2, ai05_5_plot_url3=ai05_5_plot_url3, ai05_5_plot_url4=ai05_5_plot_url4
+    )
+
+@app.route('/ai_ch05_6')
+def ai_ch05_6():
+    from ai_ch05.ai_ch05_6 import ai05_6_url1, ai05_6_url2, ai05_6_url3
+    return render_template(
+        'ai_ch05/ai_ch05_6.html', ai05_6_url1=ai05_6_url1, ai05_6_url2=ai05_6_url2, ai05_6_url3=ai05_6_url3
+    )
+
+#
+#
+#
+   
+@app.route('/ai_ch07_2')
+def ai_ch07_2():
+    from ai_ch07.ai_ch07_2 import ai07_2_url1
+    return render_template(
+        'ai_ch07/ai_ch07_2.html', ai07_2_url1=ai07_2_url1
+    )
+
+@app.route('/ai_ch07_3')
+def ai_ch07_3():
+    from ai_ch07.ai_ch07_3 import ai07_3_url1, ai07_3_url2, ai07_3_url3, ai07_3_url4, ai07_3_url5, ai07_3_url6, ai07_3_url7
+    return render_template(
+        'ai_ch07/ai_ch07_3.html', ai07_3_url1=ai07_3_url1, ai07_3_url2=ai07_3_url2, ai07_3_url3=ai07_3_url3, ai07_3_url4=ai07_3_url4, ai07_3_url5=ai07_3_url5,
+        ai07_3_url6=ai07_3_url6, ai07_3_url7=ai07_3_url7
+    )
+
+@app.route('/ai_ch07_6')
+def ai_ch07_6():
+    from ai_ch07.ai_ch07_6 import ai07_6_url1
+    return render_template(
+        'ai_ch07/ai_ch07_6.html', ai07_6_url1=ai07_6_url1
+    )
+
+#
+#
+#
+   
+@app.route('/ai_ch10_6')
+def ai_ch10_6():
+    from ai_ch10.ai_ch10_6 import ai10_6_url1, ai10_6_url2, ai10_6_url3
+    return render_template(
+        'ai_ch10/ai_ch10_6.html', ai10_6_url1=ai10_6_url1, ai10_6_url2=ai10_6_url2, ai10_6_url3=ai10_6_url3
+    )
+
+#
+#
+#
+   
+@app.route('/ai_ch11_3')
+def ai_ch11_3():
+    from ai_ch11.ai_ch11_3 import ai11_plot_url1, ai11_plot_url2, ai11_plot_url3
+    return render_template(
+        'ai_ch11/ai_ch11_3.html', ai11_plot_url1=ai11_plot_url1, ai11_plot_url2=ai11_plot_url2, ai11_plot_url3=ai11_plot_url3
+    )
+
+@app.route('/ai_ch11_4')
+def ai_ch11_4():
+    from ai_ch11.ai_ch11_4 import ai11_plot_url1, ai11_plot_url2
+    return render_template(
+        'ai_ch11/ai_ch11_4.html', ai11_plot_url1=ai11_plot_url1, ai11_plot_url2=ai11_plot_url2
+    )
+
+@app.route('/ai_ch11_5')
+def ai_ch11_5():
+    from ai_ch11.ai_ch11_5 import ai11_5_url1, ai11_5_url2, ai11_5_url3, ai11_5_url4, ai11_5_url5, ai11_plot_url1, ai11_plot_url2
+    return render_template(
+        'ai_ch11/ai_ch11_5.html', ai11_5_url1=ai11_5_url1, ai11_5_url2=ai11_5_url2, ai11_5_url3=ai11_5_url3, ai11_5_url4=ai11_5_url4, ai11_5_url5=ai11_5_url5,
+            ai11_plot_url1=ai11_plot_url1, ai11_plot_url2=ai11_plot_url2
+    )
+
+#
+#
+#
+   
+@app.route('/ai_ch12_2')
+def ai_ch12_2():
+    from ai_ch12.ai_ch12_2 import ai12_plot_url1
+    return render_template(
+        'ai_ch12/ai_ch12_2.html', ai12_plot_url1=ai12_plot_url1
+    )
+
+@app.route('/ai_ch12_3')
+def ai_ch12_3():
+    from ai_ch12.ai_ch12_3 import ai12_3_url1, ai12_3_url2, ai12_3_url3, ai12_plot_url1
+    return render_template(
+        'ai_ch12/ai_ch12_3.html', ai12_3_url1=ai12_3_url1, ai12_3_url2=ai12_3_url2, ai12_3_url3=ai12_3_url3, ai12_plot_url1=ai12_plot_url1
+    )
+
+@app.route('/ai_ch12_5')
+def ai_ch12_5():
+    from ai_ch12.ai_ch12_5 import ai12_plot_url1
+    return render_template(
+        'ai_ch12/ai_ch12_5.html', ai12_plot_url1=ai12_plot_url1
+    )
+
+#
+#
+#
+
+@app.route('/ai_m01_ch01_1')
+def ai_m01_ch01_1():
+    from ai_m01_ch01.ai_m01_ch01_1 import ai01_1_url1, ai01_1_url2
+    return render_template(
+        'ai_m01_ch01/ai_m01_ch01_1.html', ai01_1_url1=ai01_1_url1, ai01_1_url2=ai01_1_url2
+    )
+
+@app.route('/ai_m01_ch02_2')
+def ai_m01_ch02_2():
+    from ai_m01_ch02.ai_m01_ch02_2 import ai02_2_url1, ai02_2_url2, ai02_2_url3, ai02_2_url4, ai02_2_url5, ai02_2_url6, ai02_2_url7, ai02_2_url8, ai02_2_url9, ai02_2_url10, ai02_2_url11
+    return render_template(
+        'ai_m01_ch02/ai_m01_ch02_2.html', ai02_2_url1=ai02_2_url1, ai02_2_url2=ai02_2_url2, ai02_2_url3=ai02_2_url3, ai02_2_url4=ai02_2_url4, ai02_2_url5=ai02_2_url5, ai02_2_url6=ai02_2_url6,
+            ai02_2_url7=ai02_2_url7, ai02_2_url8=ai02_2_url8,ai02_2_url9=ai02_2_url9, ai02_2_url10=ai02_2_url10, ai02_2_url11=ai02_2_url11
+    )
+
+@app.route('/ai_m01_ch06_1')
+def ai_m01_ch06_1():
+    from ai_m01_ch06.ai_m01_ch06_1 import ai06_1_url1, ai06_1_url2, ai06_1_url3, ai06_1_url4, ai06_plot_url1
+    return render_template(
+        'ai_m01_ch06/ai_m01_ch06_1.html', ai06_1_url1=ai06_1_url1, ai06_1_url2=ai06_1_url2, ai06_1_url3=ai06_1_url3, ai06_1_url4=ai06_1_url4, ai06_plot_url1=ai06_plot_url1
+    )
+
+@app.route('/ai_m01_ch07_2')
+def ai_m01_ch07_2():
+    from ai_m01_ch07.ai_m01_ch07_2 import ai07_2_url1, ai07_2_url2, ai07_2_url3, ai07_2_url4, ai07_2_url5, ai07_plot_url1
+    return render_template(
+        'ai_m01_ch07/ai_m01_ch07_2.html', ai07_2_url1=ai07_2_url1, ai07_2_url2=ai07_2_url2, ai07_2_url3=ai07_2_url3, ai07_2_url4=ai07_2_url4, ai07_2_url5=ai07_2_url5, 
+            ai07_plot_url1=ai07_plot_url1
     )
 
 #

@@ -1,3 +1,6 @@
+#
+# Classification and regression using supervised learning : Income Classifier
+#
 import numpy as np
 from sklearn import preprocessing
 from sklearn.svm import LinearSVC

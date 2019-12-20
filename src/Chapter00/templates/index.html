@@ -7,337 +7,1429 @@
     </head>
     <body>
         <h3>Machine Learning:</h3>
-        <ol start="2">
-	        <li><a href=/ml_ch02>Training Machine Learning Algorithms for Classification</a>
-	        	<ul>
-			        <li><a href=/ml_ch02_1>Implementing a perceptron learning algorithm</a></li>
-			        <li><a href=/ml_ch02_2>Adaptive linear neurons and the convergence of learning</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch02_21>Minimizing cost functions with gradient descent</a></li>
-					        <li><a href=/ml_ch02_22>Implementing an Adaptive Linear Neuron</a></li>
-					        <li><a href=/ml_ch02_23>Improving gradient descent through feature scaling</a></li>
-					        <li><a href=/ml_ch02_24>Large scale machine learning and stochastic gradient descent</a></li>
-			        	</ol>
+        <div class="row">
+        	<div class="column">
+		        <ol start="2">
+			        <li><a id="ml_ch02" href=/ml_ch02>Training Machine Learning Algorithms for Classification</a>
+			        	<ul>
+					        <li><a id="ml_ch02_1" href=/ml_ch02_1>Implementing a perceptron learning algorithm</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>ml_ch02.ml_ch02_util.Perceptron</li>
+							        <li>ml_ch02.ml_ch02_util.plot_decision_regions</li>
+							        <li>numpy</li>
+							        <li>pandas</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch02_2" href=/ml_ch02_2>Adaptive linear neurons and the convergence of learning</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch02_21" href=/ml_ch02_21>Minimizing cost functions with gradient descent</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+							        		<li>ml_ch02.ml_ch02_util.AdalineGD</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch02_22" href=/ml_ch02_22>Implementing an Adaptive Linear Neuron</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+							        		<li>ml_ch02.ml_ch02_util.AdalineGD</li>
+									        <li>ml_ch02.ml_ch02_util.plot_decision_regions</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch02_23" href=/ml_ch02_23>Improving gradient descent through feature scaling</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+							        		<li>ml_ch02.ml_ch02_util.AdalineGD</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch02_24" href=/ml_ch02_24>Large scale machine learning and stochastic gradient descent</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+							        		<li>ml_ch02.ml_ch02_util.AdalineGD</li>
+									        <li>ml_ch02.ml_ch02_util.plot_decision_regions</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>
+					        </li>
+			        	</ul>
 			        </li>
-	        	</ul>
-	        </li>
-	        <li><a href=/ml_ch03>Machine Learning Classifiers Using Scikit-Learn</a>
-	        	<ul>
-			        <li><a href=/ml_ch03_0>Training a perceptron model using the standardized training data</a></li>
-			        <li><a href=/ml_ch03_1>Modeling class probabilities via logistic regression</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch03_11>Logistic regression intuition and conditional probabilities</a></li>
-					        <li><a href=/ml_ch03_12>Learning the weights of the logistic cost function</a></li>
-					        <li><a href=/ml_ch03_13>Training a logistic regression model with scikit-learn</a></li>
-					        <li><a href=/ml_ch03_14>Tackling overfitting via regularization</a></li>
-			        	</ol>
-			        </li>
-			        <li><a href=/ml_ch03_2>Maximum margin classification with support vector machines</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch03_21>Maximum margin intuition</a></li>
-					        <li><a href=/ml_ch03_22>Dealing with the nonlinearly separable case using slack variables</a></li>
-			        	</ol>
-			        </li>
-			        <li><a href=/ml_ch03_3>Solving nonlinear problems using a kernel SVM</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch03_3>Using the kernel trick to find separating hyperplanes in higher dimensional space</a></li>
-			        	</ol>
-			        </li>
-			        <li><a href=/ml_ch03_4>Decision tree learning</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch03_41>Maximizing information gain – getting the most bang for the buck</a></li>
-					        <li><a href=/ml_ch03_42>Building a decision tree</a></li>
-					        <li><a href=/ml_ch03_43>Combining weak to strong learners via random forests</a></li>
-			        	</ol>
-			        </li>
-			        <li><a href=/ml_ch03_5>K-nearest neighbors – a lazy learning algorithm</a></li>
-	        	</ul>
-	        </li>
-	        <li><a href=/ml_ch04>Building Good Training Sets – Data Preprocessing</a>
-	        	<ul>
-			        <li><a href=/ml_ch04_1>Selecting meaningful features</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch04_11>Sparse solutions with L1 regularization</a></li>
-					        <li><a href=/ml_ch04_12>Sequential feature selection algorithms</a></li>
-			        	</ol>
-			        </li>
-			        <li><a href=/ml_ch04_2>Assessing feature importance with Random Forests</a></li>
-	        	</ul>
-	        </li>
-	        <li><a href=/ml_ch05>Compressing Data via Dimensionality Reduction</a>
-	        	<ul>
-			        <li><a href=/ml_ch05_1>Unsupervised dimensionality reduction via principal component analysis 128</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch05_11>Total and explained variance</a></li>
-					        <li><a href=/ml_ch05_12>Feature transformation</a></li>
-					        <li><a href=/ml_ch05_13>Principal component analysis in scikit-learn</a></li>
-			        	</ol>
-			        </li>
-			        <li><a href=/ml_ch05_2>Supervised data compression via linear discriminant analysis</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch05_21>Selecting linear discriminants for the new feature subspace</a></li>
-					        <li><a href=/ml_ch05_22>Projecting samples onto the new feature space</a></li>
-					        <li><a href=/ml_ch05_23>LDA via scikit-learn</a></li>
-			        	</ol>
-			        </li>
-			        <li><a href=/ml_ch05_3>Using kernel principal component analysis for nonlinear mappings</a>
-			        	<ol start="1">
-					        <li><a href=/ml_ch05_3>Implementing a kernel principal component analysis in Python</a>
-					        	<ul>
-							        <li><a href=/ml_ch05_31>Separating half-moon shapes</a></li>
-							        <li><a href=/ml_ch05_32>Separating concentric circles</a></li>
-							        <li><a href=/ml_ch05_33>Projecting new data points</a></li>
-							        <li><a href=/ml_ch05_34>Kernel principal component analysis in scikit-learn</a></li>
+			        <li><a id="ml_ch03" href=/ml_ch03>Machine Learning Classifiers Using Scikit-Learn</a>
+			        	<ul>
+					        <li><a id="ml_ch03_0" href=/ml_ch03_0>Training a perceptron model using the standardized training data</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>distutils.version.LooseVersion</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>ml_ch03.ml_ch03_util.plot_decision_regions</li>
+							        <li>numpy</li>
+							        <li>sklearn.__version__</li>
+							        <li>sklearn.datasets</li>
+							        <li>sklearn.linear_model.Perceptron</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
 					        	</ul>
 					        </li>
-			        	</ol>
+					        <li><a id="ml_ch03_1" href=/ml_ch03_1>Modeling class probabilities via logistic regression</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch03_11" href=/ml_ch03_11>Logistic regression intuition and conditional probabilities</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch03.ml_ch03_util.sigmoid</li>
+									        <li>numpy</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch03_12" href=/ml_ch03_12>Learning the weights of the logistic cost function</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch03.ml_ch03_util.cost_0</li>
+									        <li>ml_ch03.ml_ch03_util.cost_1</li>
+									        <li>ml_ch03.ml_ch03_util.LogisticRegressionGD</li>
+									        <li>ml_ch03.ml_ch03_util.plot_decision_regions</li>
+									        <li>ml_ch03.ml_ch03_util.sigmoid</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch03_13" href=/ml_ch03_13>Training a logistic regression model with scikit-learn</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch03.ml_ch03_util.plot_decision_regions</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.linear_model.LogisticRegression</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch03_14" href=/ml_ch03_14>Tackling overfitting via regularization</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.linear_model.LogisticRegression</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>
+					        </li>
+					        <li><a id="ml_ch03_2" href=/ml_ch03_2>Maximum margin classification with support vector machines</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch03_21" href=/ml_ch03_21>Maximum margin intuition</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch03.ml_ch03_util.plot_decision_regions</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+									        <li>sklearn.svm.SVC</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch03_22" href=/ml_ch03_22>Dealing with the nonlinearly separable case using slack variables</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.linear_model.SGDClassifier</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>
+					        </li>
+					        <li><a id="ml_ch03_3" href=/ml_ch03_3>Solving nonlinear problems using a kernel SVM</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch03_3" href=/ml_ch03_3>Using the kernel trick to find separating hyperplanes in higher dimensional space</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch03.ml_ch03_util.plot_decision_regions</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+									        <li>sklearn.__version__</li>
+									        <li>sklearn.SVC</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>
+					        </li>
+					        <li><a id="ml_ch03_4" href=/ml_ch03_4>Decision tree learning</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch03_41" href=/ml_ch03_41>Maximizing information gain – getting the most bang for the buck</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch03.ml_ch03_util.gini</li>
+									        <li>ml_ch03.ml_ch03_util.entropy</li>
+									        <li>ml_ch03.ml_ch03_util.error</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch03_42" href=/ml_ch03_42>Building a decision tree</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch03.ml_ch03_util.plot_decision_regions</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.tree.DecisionTreeClassifier</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch03_43" href=/ml_ch03_43>Combining weak to strong learners via random forests</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>distutils.version.LooseVersion</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch03.ml_ch03_util.plot_decision_regions</li>
+									        <li>numpy</li>
+									        <li>sklearn.datasets</li>
+									        <li>sklearn.ensemble.RandomForestClassifier</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.__version__</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>
+					        </li>
+					        <li><a id="ml_ch03_5" href=/ml_ch03_5>K-nearest neighbors – a lazy learning algorithm</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>distutils.version.LooseVersion</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>ml_ch03.ml_ch03_util.plot_decision_regions</li>
+							        <li>numpy</li>
+							        <li>sklearn.datasets</li>
+							        <li>sklearn.neighbors.KNeighborsClassifier</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+							        <li>sklearn.__version__</li>
+					        	</ul>					        
+					        </li>
+			        	</ul>
 			        </li>
-	        	</ul>
-	        </li>
-	        <li><a href=/ml_ch06>Learning Best Practices for Model Evaluation and Hyperparameter Tuning</a>
-	        	<ul>
-			        <li><a href=/ml_ch06_1>Streamlining workflows with pipelines</a></li>
-			        <li><a href=/ml_ch06_2>Using k-fold cross-validation to assess model performance</a></li>
-			        <li><a href=/ml_ch06_3>Debugging algorithms with learning and validation curves</a></li>
-			        <li><a href=/ml_ch06_4>Fine-tuning machine learning models via grid search</a></li>
-			        <li><a href=/ml_ch06_5>Looking at different performance evaluation metrics</a></li>
-			        <li><a href=/ml_ch06_6>Plotting a receiver operating characteristic</a></li>
-	        	</ul>
-	        </li>
-	        <li><a href=/ml_ch07>Combining Different Models for Ensemble Learning</a>
-	        	<ul>
-			        <li><a href=/ml_ch07_1>Learning with ensembles</a></li>
-			        <li><a href=/ml_ch07_2>Combining classifiers via majority vote</a></li>
-			        <li><a href=/ml_ch07_3>Evaluating and tuning the ensemble classifier</a></li>
-			        <li><a href=/ml_ch07_4>Bagging – building an ensemble of classifiers from bootstrap samples</a></li>
-			        <li><a href=/ml_ch07_5>Leveraging weak learners via adaptive boosting</a></li>
-	        	</ul>
-	        </li>
-	        <li><a href="/">Applying Machine Learning To Sentiment Analysis</a></li>
-	        <li><a href=/ml_ch09>Embedding a Machine Learning Model into a Web Application</a></li>
-	        <li><a href=/ml_ch10>Predicting Continuous Target Variables with Regression Analysis</a>
-	        	<ul>
-			        <li><a href=/ml_ch10_1>Exploring the Housing Dataset</a></li>
-			        <li><a href=/ml_ch10_2>Implementing an ordinary least squares linear regression model</a></li>
-			        <li><a href=/ml_ch10_3>Fitting a robust regression model using RANSAC</a></li>
-			        <li><a href=/ml_ch10_4>Evaluating the performance of linear regression models</a></li>
-			        <li><a href=/ml_ch10_5>Using regularized methods for regression</a></li>
-			        <li><a href=/ml_ch10_6>Turning a linear regression model into a curve - polynomial regression</a></li>
-	        	</ul>
-	        </li>
-	        <li><a href=/ml_ch11>Working with Unlabeled Data – Clustering Analysis</a>
-	        	<ul>
-			        <li><a href=/ml_ch11_1>Grouping objects by similarity using k-means</a></li>
-			        <li><a href=/ml_ch11_2>Organizing clusters as a hierarchical tree</a></li>
-			        <li><a href=/ml_ch11_3>Locating regions of high density via DBSCAN</a></li>
-	        	</ul>
-	        </li>
-	        <li><a href="/">Implementing a Multi-layer Artificial Neural Network from Scratch</a></li>
-	        <li><a href="/">Parallelizing Neural Network Training with TensorFlow</a></li>
-	        <li><a href="/">Going Deeper: The Mechanics of TensorFlow</a></li>
-	        <li><a href="/">Classifying Images with Deep Convolutional Neural Networks</a></li>
-	        <li><a href="/">Modeling Sequential Data Using Recurrent Neural Networks</a></li>
-        </ol>
+			        <li><a id="ml_ch04" href=/ml_ch04>Building Good Training Sets – Data Preprocessing</a>
+			        	<ul>
+					        <li><a id="ml_ch04_1" href=/ml_ch04_1>Selecting meaningful features</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch04_11" href=/ml_ch04_11>Sparse solutions with L1 regularization</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>io.StringIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+									        <li>sklearn.linear_model.LogisticRegression</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.Imputer</li>
+									        <li>sklearn.preprocessing.LabelEncoder</li>
+									        <li>sklearn.preprocessing.MinMaxScaler</li>
+									        <li>sklearn.preprocessing.OneHotEncoder</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch04_12" href=/ml_ch04_12>Sequential feature selection algorithms</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>io.StringIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch04.ml_ch04_util.SBS</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+									        <li>sklearn.linear_model.LogisticRegression</li>
+									        <li>sklearn.neighbors.KNeighborsClassifier</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.Imputer</li>
+									        <li>sklearn.preprocessing.LabelEncoder</li>
+									        <li>sklearn.preprocessing.MinMaxScaler</li>
+									        <li>sklearn.preprocessing.OneHotEncoder</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>
+					        </li>
+					        <li><a id="ml_ch04_2" href=/ml_ch04_2>Assessing feature importance with Random Forests</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>pandas</li>
+							        <li>sklearn.ensemble.RandomForestClassifier</li>
+							        <li>sklearn.feature_selection.SelectFromModel</li>
+							        <li>sklearn.linear_model.LogisticRegression</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.preprocessing.MinMaxScaler</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+					        	</ul>					        
+					        </li>
+			        	</ul>
+			        </li>
+			        <li><a id="ml_ch05" href=/ml_ch05>Compressing Data via Dimensionality Reduction</a>
+			        	<ul>
+					        <li><a id="ml_ch05_1" href=/ml_ch05_1>Unsupervised dimensionality reduction via principal component analysis 128</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch05_11" href=/ml_ch05_11>Total and explained variance</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch05_12" href=/ml_ch05_12>Feature transformation</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch05_13" href=/ml_ch05_13>Principal component analysis in scikit-learn</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch05.ml_ch05_util.plot_decision_regions</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+									        <li>sklearn.decomposition.PCA</li>
+									        <li>sklearn.linear_model.LogisticRegression</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>
+					        </li>
+					        <li><a id="ml_ch05_2" href=/ml_ch05_2>Supervised data compression via linear discriminant analysis</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch05_21" href=/ml_ch05_21>Selecting linear discriminants for the new feature subspace</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+									        <li>sklearn.decomposition.PCA</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch05_22" href=/ml_ch05_22>Projecting samples onto the new feature space</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>numpy</li>
+									        <li>pandas</li>
+									        <li>sklearn.decomposition.PCA</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+							        	</ul>					        
+							        </li>
+							        <li><a id="ml_ch05_23" href=/ml_ch05_23>LDA via scikit-learn</a>
+							        	<ul class="green">
+									        <li>base64.b64encode</li>
+									        <li>io.BytesIO</li>
+									        <li>matplotlib.pyplot</li>
+									        <li>ml_ch05.ml_ch05_util.plot_decision_regions</li>
+									        <li>pandas</li>
+									        <li>sklearn.discriminant_analysis.LinearDiscriminantAnalysis</li>
+									        <li>sklearn.linear_model.LogisticRegression</li>
+									        <li>sklearn.model_selection.train_test_split</li>
+									        <li>sklearn.preprocessing.StandardScaler</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>
+					        </li>
+					        <li><a id="ml_ch05_3" href=/ml_ch05_3>Using kernel principal component analysis for nonlinear mappings</a>
+					        	<ol start="1">
+							        <li><a id="ml_ch05_3" href=/ml_ch05_3>Implementing a kernel principal component analysis in Python</a>
+							        	<ul>
+									        <li><a id="ml_ch05_31" href=/ml_ch05_31>Separating half-moon shapes</a>
+									        	<ul class="green">
+											        <li>base64.b64encode</li>
+											        <li>io.BytesIO</li>
+											        <li>matplotlib.pyplot</li>
+											        <li>ml_ch05.ml_ch05_util.rbf_kernel_pca</li>
+											        <li>numpy</li>
+											        <li>pandas</li>
+											        <li>sklearn.datasets.make_moons</li>
+											        <li>sklearn.decomposition.PCA</li>
+											        <li>sklearn.model_selection.train_test_split</li>
+											        <li>sklearn.preprocessing.StandardScaler</li>
+									        	</ul>					        
+									        </li>
+									        <li><a id="ml_ch05_32" href=/ml_ch05_32>Separating concentric circles</a>
+									        	<ul class="green">
+											        <li>base64.b64encode</li>
+											        <li>io.BytesIO</li>
+											        <li>matplotlib.pyplot</li>
+											        <li>ml_ch05.ml_ch05_util.rbf_kernel_pca</li>
+											        <li>numpy</li>
+											        <li>pandas</li>
+											        <li>sklearn.datasets.make_circles</li>
+											        <li>sklearn.decomposition.PCA</li>
+											        <li>sklearn.model_selection.train_test_split</li>
+											        <li>sklearn.preprocessing.StandardScaler</li>
+									        	</ul>					        
+									        </li>
+									        <li><a id="ml_ch05_33" href=/ml_ch05_33>Projecting new data points</a>
+									        	<ul class="green">
+											        <li>base64.b64encode</li>
+											        <li>io.BytesIO</li>
+											        <li>matplotlib.pyplot</li>
+											        <li>ml_ch05.ml_ch05_util.rbf_kernel_pca</li>
+											        <li>ml_ch05.ml_ch05_util.project_x</li>
+											        <li>numpy</li>
+											        <li>pandas</li>
+											        <li>sklearn.datasets.make_moons</li>
+											        <li>sklearn.model_selection.train_test_split</li>
+											        <li>sklearn.preprocessing.StandardScaler</li>
+									        	</ul>					        
+									        </li>
+									        <li><a id="ml_ch05_34" href=/ml_ch05_34>Kernel principal component analysis in scikit-learn</a>
+									        	<ul class="green">
+											        <li>base64.b64encode</li>
+											        <li>io.BytesIO</li>
+											        <li>matplotlib.pyplot</li>
+											        <li>numpy</li>
+											        <li>pandas</li>
+											        <li>sklearn.datasets.make_moons</li>
+											        <li>sklearn.decomposition.KernelPCA</li>
+											        <li>sklearn.model_selection.train_test_split</li>
+											        <li>sklearn.preprocessing.StandardScaler</li>
+									        	</ul>					        
+									        </li>
+							        	</ul>
+							        </li>
+					        	</ol>
+					        </li>
+			        	</ul>
+			        </li>
+		        </ol>
+			</div>
+        	<div class="column">
+		        <ol start="6">
+			        <li><a id="ml_ch06" href=/ml_ch06>Learning Best Practices for Model Evaluation and Hyperparameter Tuning</a>
+			        	<ul>
+					        <li><a id="ml_ch06_1" href=/ml_ch06_1>Streamlining workflows with pipelines</a>
+					        	<ul class="green">
+							        <li>pandas</li>
+							        <li>sklearn.decomposition.PCA</li>
+							        <li>sklearn.linear_model.LogisticRegression</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.pipeline.make_pipeline</li>
+							        <li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch06_2" href=/ml_ch06_2>Using k-fold cross-validation to assess model performance</a>
+					        	<ul class="green">
+					        		<li>numpy</li>
+							        <li>pandas</li>
+							        <li>sklearn.decomposition.PCA</li>
+							        <li>sklearn.linear_model.LogisticRegression</li>
+							        <li>sklearn.model_selection.cross_val_score</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.model_selection.StratifiedKFold</li>
+							        <li>sklearn.pipeline.make_pipeline</li>
+							        <li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch06_3" href=/ml_ch06_3>Debugging algorithms with learning and validation curves</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+							        <li>pandas</li>
+							        <li>sklearn.linear_model.LogisticRegression</li>
+							        <li>sklearn.model_selection.learning_curve</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.model_selection.validation_curve</li>
+							        <li>sklearn.pipeline.make_pipeline</li>
+							        <li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch06_4" href=/ml_ch06_4>Fine-tuning machine learning models via grid search</a>
+					        	<ul class="green">
+					        		<li>numpy</li>
+							        <li>pandas</li>
+							        <li>sklearn.model_selection.cross_val_score</li>
+							        <li>sklearn.model_selection.GridSearchCV</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.pipeline.make_pipeline</li>
+							        <li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+							        <li>sklearn.svm.SVC</li>
+							        <li>sklearn.tree.DecisionTreeClassifier</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch06_5" href=/ml_ch06_5>Looking at different performance evaluation metrics</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>pandas</li>
+							        <li>sklearn.metrics.confusion_matrix</li>
+							        <li>sklearn.metrics.f1_score</li>
+							        <li>sklearn.metrics.make_scorer</li>
+							        <li>sklearn.metrics.precision_score</li>
+							        <li>sklearn.metrics.recall_score</li>
+							        <li>sklearn.model_selection.GridSearchCV</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.pipeline.make_pipeline</li>
+							        <li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+							        <li>sklearn.svm.SVC</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch06_6" href=/ml_ch06_6>Plotting a receiver operating characteristic</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+							        <li>pandas</li>
+							        <li>scipy.interp</li>
+							        <li>sklearn.decomposition.PCA</li>
+							        <li>sklearn.linear_model.LogisticRegression</li>
+							        <li>sklearn.metrics.auc</li>
+							        <li>sklearn.metrics.make_scorer</li>
+							        <li>sklearn.metrics.precision_score</li>
+							        <li>sklearn.metrics.roc_curve</li>
+							        <li>sklearn.model_selection.StratifiedKFold</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.pipeline.make_pipeline</li>
+							        <li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+							        <li>sklearn.utils.resample</li>
+					        	</ul>					        
+					        </li>
+			        	</ul>
+			        </li>
+			        <li><a id="ml_ch07" href=/ml_ch07>Combining Different Models for Ensemble Learning</a>
+			        	<ul>
+					        <li><a id="ml_ch07_1" href=/ml_ch07_1>Learning with ensembles</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+					        		<li>math</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+							        <li>scipy.special.comb</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch07_2" href=/ml_ch07_2>Combining classifiers via majority vote</a>
+					        	<ul class="green">
+					        		<li>numpy</li>
+							        <li>sklearn.base.BaseEstimator</li>
+							        <li>sklearn.base.ClassifierMixin</li>
+							        <li>sklearn.base.clone</li>
+							        <li>sklearn.datasets</li>
+							        <li>sklearn.externals.six</li>
+							        <li>sklearn.linear_model.LogisticRegression</li>
+							        <li>sklearn.model_selection.cross_val_score</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.neighbors.KNeighborsClassifier</li>
+							        <li>sklearn.pipeline._name_estimators</li>
+							        <li>sklearn.pipeline.Pipeline</li>
+							        <li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+							        <li>sklearn.tree.DecisionTreeClassifier</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch07_3" href=/ml_ch07_3>Evaluating and tuning the ensemble classifier</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+					        		<li>itertools.product</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+							        <li>sklearn.base.BaseEstimator</li>
+							        <li>sklearn.base.ClassifierMixin</li>
+							        <li>sklearn.base.clone</li>
+							        <li>sklearn.datasets</li>
+							        <li>sklearn.externals.six</li>
+							        <li>sklearn.linear_model.LogisticRegression</li>
+							        <li>sklearn.metrics.auc</li>
+							        <li>sklearn.metrics.roc_curve</li>
+							        <li>sklearn.model_selection.GridSearchCV</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.neighbors.KNeighborsClassifier</li>
+							        <li>sklearn.pipeline._name_estimators</li>
+							        <li>sklearn.pipeline.Pipeline</li>
+							        <li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.preprocessing.StandardScaler</li>
+							        <li>sklearn.tree.DecisionTreeClassifier</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch07_4" href=/ml_ch07_4>Bagging – building an ensemble of classifiers from bootstrap samples</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>sklearn.ensemble.BaggingClassifier</li>
+					        		<li>sklearn.metrics.accuracy_score</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+					        		<li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.tree.DecisionTreeClassifier</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch07_5" href=/ml_ch07_5>Leveraging weak learners via adaptive boosting</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>sklearn.ensemble.AdaBoostClassifier</li>
+					        		<li>sklearn.metrics.accuracy_score</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+					        		<li>sklearn.preprocessing.LabelEncoder</li>
+							        <li>sklearn.tree.DecisionTreeClassifier</li>
+					        	</ul>					        
+					        </li>
+			        	</ul>
+			        </li>
+			        <li>Applying Machine Learning To Sentiment Analysis</li>
+			        <li><a id="ml_ch09" href=/ml_ch09>Embedding a Machine Learning Model into a Web Application</a>
+			        	<ul class="green">
+			        		<li>ml_ch09.vectorizer.vect</li>
+			        		<li>numpy</li>
+			        		<li>os</li>
+					        <li>pickle</li>
+					        <li>sqlite3</li>
+					        <li>wtforms.Form</li>
+					        <li>wtforms.TextAreaField</li>
+					        <li>wtforms.validators</li>
+			        	</ul>					        
+			        </li>
+			        <li><a id="ml_ch10" href=/ml_ch10>Predicting Continuous Target Variables with Regression Analysis</a>
+			        	<ul>
+					        <li><a id="ml_ch010_1" href=/ml_ch10_1>Exploring the Housing Dataset</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>seaborn</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch010_2" href=/ml_ch10_2>Implementing an ordinary least squares linear regression model</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>sklearn.linear_model.LinearRegression</li>
+					        		<li>sklearn.preprocessing.StandardScaler</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch010_3" href=/ml_ch10_3>Fitting a robust regression model using RANSAC</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>sklearn.linear_model.LinearRegression</li>
+					        		<li>sklearn.linear_model.RANSACRegressor</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch010_4" href=/ml_ch10_4>Evaluating the performance of linear regression models</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>sklearn.linear_model.LinearRegression</li>
+					        		<li>sklearn.metrics.mean_squared_error</li>
+					        		<li>sklearn.metrics.r2_score</li>
+					        		<li>sklearn.model_selection.train_test_split</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch010_5" href=/ml_ch10_5>Using regularized methods for regression</a>
+					        	<ul class="green">
+					        		<li>pandas</li>
+					        		<li>sklearn.linear_model.ElasticNet</li>
+					        		<li>sklearn.linear_model.Lasso</li>
+					        		<li>sklearn.linear_model.Ridge</li>
+					        		<li>sklearn.metrics.mean_squared_error</li>
+					        		<li>sklearn.metrics.r2_score</li>
+					        		<li>sklearn.model_selection.train_test_split</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch010_6" href=/ml_ch10_6>Turning a linear regression model into a curve - polynomial regression</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>sklearn.ensemble.RandomForestRegressor</li>
+					        		<li>sklearn.linear_model.LinearRegression</li>
+					        		<li>sklearn.metrics.mean_squared_error</li>
+					        		<li>sklearn.metrics.r2_score</li>
+					        		<li>sklearn.model_selection.train_test_split</li>
+					        		<li>sklearn.preprocessing.PolynomialFeatures</li>
+					        		<li>sklearn.tree.DecisionTreeRegressor</li>
+					        	</ul>					        
+					        </li>
+			        	</ul>
+			        </li>
+			        <li><a id="ml_ch011" href=/ml_ch11>Working with Unlabeled Data – Clustering Analysis</a>
+			        	<ul>
+					        <li><a id="ml_ch011_1" href=/ml_ch11_1>Grouping objects by similarity using k-means</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>sklearn.cluster.KMeans</li>
+					        		<li>sklearn.datasets.make_blobs</li>
+					        		<li>sklearn.metrics.silhouette_samples</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch011_2" href=/ml_ch11_2>Organizing clusters as a hierarchical tree</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>scipy.spatial.distance.pdist</li>
+					        		<li>scipy.spatial.distance.squareform</li>
+					        		<li>scipy.cluster.hierarchy.dendrogram</li>
+					        		<li>scipy.cluster.hierarchy.linkage</li>
+					        		<li>sklearn.cluster.AgglomerativeClustering</li>
+					        	</ul>					        
+					        </li>
+					        <li><a id="ml_ch011_3" href=/ml_ch11_3>Locating regions of high density via DBSCAN</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        		<li>numpy</li>
+					        		<li>pandas</li>
+					        		<li>sklearn.cluster.AgglomerativeClustering</li>
+					        		<li>sklearn.cluster.DBSCAN</li>
+					        		<li>sklearn.cluster.KMeans</li>
+					        		<li>sklearn.datasets.make_moons</li>
+					        	</ul>					        
+					        </li>
+			        	</ul>
+			        </li>
+			        <li>Implementing a Multi-layer Artificial Neural Network from Scratch</li>
+			        <li>Parallelizing Neural Network Training with TensorFlow</li>
+			        <li>Going Deeper: The Mechanics of TensorFlow</li>
+			        <li>Classifying Images with Deep Convolutional Neural Networks</li>
+			        <li>Modeling Sequential Data Using Recurrent Neural Networks</li>
+		        </ol>
+			</div>
+ 		</div>
+        
+        <br>
         <h3>Artificial Intelligence:</h3>
-        <ol start="2">
-	        <li>Classification and regression using supervised learning
-	        	<ul>
-			        <li><a href=/ai_ch02_1>Confusion Matrix</a></li>
-			        <li><a href=/ai_ch02_2>Data Preprocessor</a></li>
-			        <li><a href=/ai_ch02_3>House Prices</a></li>
-			        <li><a href=/ai_ch02_4>Income Classifier</a></li>
-			        <li><a href=/ai_ch02_5>Label Encoder</a></li>
-			        <li><a href=/ai_ch02_6>Logistic Regression</a></li>
-			        <li><a href=/ai_ch02_7>Naive Bayes</a></li>
-			        <li><a href=/ai_ch02_8>Regressor Multivar</a></li>
-			        <li><a href=/ai_ch02_9>Regressor Singlevar</a></li>
-	        	</ul>
-	        </li>
-	        <li>Predictive analytics with ensemble learning
-	        	<ul>
-			        <li><a href=/ai_ch03_1>Class Imbalance</a></li>
-			        <li><a href=/ai_ch03_2>Decision Trees</a></li>
-			        <li><a href=/ai_ch03_3>Feature Importance</a></li>
-			        <li><a href=/ai_ch03_4>Grid Search</a></li>
-			        <li><a href=/ai_ch03_5>Random Forests</a></li>
-			        <li><a href=/ai_ch03_6>Run Grid Search</a></li>
-			        <li><a href=/ai_ch03_7>Traffic Prediction</a></li>
-	        	</ul>
-	        </li>
-	        <li>Detecting patterns with unsupervised learning
-	        	<ul>
-			        <li><a href=/ai_ch04_1>Clustering Quality</a></li>
-			        <li><a href=/ai_ch04_2>GMM Classifier</a></li>
-					<li><a href=/ai_ch04_3>KMeansy</a></li>
-					<li><a href=/ai_ch04_4>Market Segmentation</a></li>
-					<li><a href=/ai_ch04_5>Mean Shift</a></li>
-					<li><a href=/ai_ch04_6>Stocks</a></li>
-	        	</ul>
-	        </li>
-	        <li>Building recommender systems
-	        	<ul>
-			        <li><a href=/ai_ch05_1>Collaborative Filtering</a></li>
-			        <li><a href=/ai_ch05_2>Compute Scores</a></li>
-					<li><a href=/ai_ch05_3>K-Nearest Neighbors</a></li>
-					<li><a href=/ai_ch05_4>Movie Recommender</a></li>
-					<li><a href=/ai_ch05_5>Nearest Neighbor Classifier</a></li>
-					<li><a href=/ai_ch05_6>Pipeline Trainer</a></li>
-	        	</ul>
-	        </li>
-	        <li>Logic programming
-	        	<ul>
-			        <li><a href=/ai_ch06_1>Expression Matcher</a></li>
-			        <li><a href=/ai_ch06_2>Family</a></li>
-					<li><a href=/ai_ch06_3>Prime</a></li>
-					<li><a href=/ai_ch06_4>Puzzle</a></li>
-					<li><a href=/ai_ch06_5>States</a></li>
-	        	</ul>
-	        </li>
-	        <li>Heuristic search techniques
-	        	<ul>
-			        <li><a href=/ai_ch07_1>Simple AI</a>
-		        	<ol start="1">
-				        <li><a href=/ml_ch07_11>Machine Learning</a>
-				        	<ul>
-						        <li><a href=/ml_ch07_111>Classifier</a></li>
-						        <li><a href=/ml_ch07_112>Evaluation</a></li>
-						        <li><a href=/ml_ch07_113>Metrics</a></li>
-						        <li><a href=/ml_ch07_114>Models</a></li>
-						        <li><a href=/ml_ch07_115>Reinforcement Learning</a></li>
-				        	</ul>
-				        </li>
-				        <li><a href=/ml_ch07_12>Search</a>
-				        	<ul>
-						        <li><a href=/ml_ch07_121>Arc</a></li>
-						        <li><a href=/ml_ch07_122>CSP</a></li>
-						        <li><a href=/ml_ch07_123>Local</a></li>
-						        <li><a href=/ml_ch07_124>Models</a></li>
-						        <li><a href=/ml_ch07_125>Traditional</a></li>
-						        <li><a href=/ml_ch07_126>Utils</a></li>
-						        <li><a href=/ml_ch07_127>Viewers</a></li>
-						        <li><a href=/ml_ch07_128>Web Viewer Server</a></li>
-				        	</ul>
-				        </li>
-				        <li><a href=/ml_ch07_13>Environments</a></li>
-		        	</ol>
-			        </li>
-			        <li><a href=/ai_ch07_2>Coloring</a></li>
-					<li><a href=/ai_ch07_3>Constrained Problem</a></li>
-					<li><a href=/ai_ch07_4>Greedy Search</a></li>
-					<li><a href=/ai_ch07_5>Maze</a></li>
-					<li><a href=/ai_ch07_6>Puzzle</a></li>
-	        	</ul>
-	        </li>
-	        <li>Genetic algorithm
-	        	<ul>
-			        <li><a href=/ai_ch08_1>Bit Counter</a></li>
-			        <li><a href=/ai_ch08_2>Robot</a></li>
-					<li><a href=/ai_ch08_3>Symbol Regression</a></li>
-					<li><a href=/ai_ch08_4>Visualization</a></li>
-	        	</ul>
-	        </li>
-	        <li>Building games with Artificial Intelligence
-	        	<ul>
-			        <li><a href=/ai_ch09_1>Easy AI</a>
-			        	<ol>
-					        <li><a href=/ml_ch09_11>AI</a>
-					        	<ul>
-							        <li><a href=/ml_ch09_111>Dict TT</a></li>
-							        <li><a href=/ml_ch09_112>DUAL</a></li>
-							        <li><a href=/ml_ch09_113>Hashes</a></li>
-							        <li><a href=/ml_ch09_114>Hash TT</a></li>
-							        <li><a href=/ml_ch09_115>MT Driver</a></li>
-							        <li><a href=/ml_ch09_116>Negamax</a></li>
-							        <li><a href=/ml_ch09_117>Solving</a></li>
-							        <li><a href=/ml_ch09_118>SSS</a></li>
-							        <li><a href=/ml_ch09_119>TT</a></li>
+        <div class="row">
+        	<div class="column">
+		        <ol start="2">
+			        <li>Classification and regression using supervised learning
+			        	<ul>
+					        <li><a id="ai_ch02_1" href=/ai_ch02_1>Confusion Matrix</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.metrics.confusion_matrix</li>
+							        <li>sklearn.metrics.classification_report</li>
 					        	</ul>
 					        </li>
-					        <li><a href=/ml_ch09_12>Player</a></li>
-					        <li><a href=/ml_ch09_13>Two Players Game</a></li>
-			        	</ol>		        
+					        <li><a id="ai_ch02_2" href=/ai_ch02_2>Data Preprocessor</a>
+					        	<ul class="green">
+							        <li>numpy</li>
+							        <li>sklearn.preprocessing</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch02_3" href=/ai_ch02_3>House Prices</a>
+					        	<ul class="green">
+							        <li>sklearn.datasets</li>
+							        <li>sklearn.metrics.explained_variance_score</li>
+							        <li>sklearn.metrics.mean_squared_error</li>
+							        <li>sklearn.svm.SVR</li>
+							        <li>sklearn.utils.shuffle</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch02_4" href=/ai_ch02_4>Income Classifier</a>
+					        	<ul class="green">
+							        <li>numpy</li>
+							        <li>sklearn.model_selection.cross_val_score</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.multiclass.OneVsOneClassifier</li>
+							        <li>sklearn.preprocessing</li>
+							        <li>sklearn.svm.LinearSVC</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch02_5" href=/ai_ch02_5>Label Encoder</a>
+					        	<ul class="green">
+							        <li>sklearn.preprocessing</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch02_6" href=/ai_ch02_6>Logistic Regression</a>
+					        	<ul class="green">
+							        <li>ai_utils.visualize_classifier</li>
+							        <li>numpy</li>
+							        <li>sklearn.linear_model</li>
+							        <li>warnings.simplefilter</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch02_7" href=/ai_ch02_7>Naive Bayes</a>
+					        	<ul class="green">
+							        <li>ai_utils.visualize_classifier</li>
+							        <li>numpy</li>
+							        <li>sklearn.model_selection.cross_val_score</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.naive_bayes.GaussianNB</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch02_8" href=/ai_ch02_8>Regressor Multivar</a>
+					        	<ul class="green">
+							        <li>numpy</li>
+							        <li>sklearn.linear_model</li>
+							        <li>sklearn.metrics</li>
+							        <li>sklearn.preprocessing.PolynomialFeatures</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch02_9" href=/ai_ch02_9>Regressor Singlevar</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>pickle</li>
+							        <li>sklearn.linear_model</li>
+							        <li>sklearn.metrics</li>
+					        	</ul>
+					        </li>
+			        	</ul>
 			        </li>
-			        <li><a href=/ai_ch09_2>Coins</a></li>
-					<li><a href=/ai_ch09_3>Connect Four</a></li>
-					<li><a href=/ai_ch09_4>Hexapawn</a></li>
-					<li><a href=/ai_ch09_5>Tic Tac Toe</a></li>
-	        	</ul>
-	        </li>
-	        <li>Natural Language Processing
-	        	<ul>
-			        <li><a href=/ai_ch10_1>Bag Of Words</a></li>
-			        <li><a href=/ai_ch10_2>Category Predictor</a></li>
-					<li><a href=/ai_ch10_3>Gender Identifier</a></li>
-					<li><a href=/ai_ch10_4>Lemmatizer</a></li>
-					<li><a href=/ai_ch10_5>Sentiment Analyzer</a></li>
-					<li><a href=/ai_ch10_6>Stemmer</a></li>
-					<li><a href=/ai_ch10_7>Text Chunker</a></li>
-					<li><a href=/ai_ch10_8>Tokenizer</a></li>
-					<li><a href=/ai_ch10_9>Topic Modeler</a></li>
-	        	</ul>
-	        </li>
-	        <li>Probabilistic reasoning for sequential data
-	        	<ul>
-			        <li><a href=/ai_ch11_1>CRF</a></li>
-			        <li><a href=/ai_ch11_2>HMM</a></li>
-					<li><a href=/ai_ch11_3>Operator</a></li>
-					<li><a href=/ai_ch11_4>Slicer</a></li>
-					<li><a href=/ai_ch11_5>Stats Extractor</a></li>
-					<li><a href=/ai_ch11_6>Stock Market</a></li>
-					<li><a href=/ai_ch11_7>Time Series</a></li>
-	        	</ul>
-	        </li>
-	        <li>Speech recognition
-	        	<ul>
-			        <li><a href=/ai_ch12_1>Features</a>
-			        	<ol>
-					        <li><a href=/ml_ch12_11>Base</a></li>
-					        <li><a href=/ml_ch12_12>Sigproc</a></li>
-			        	</ol>		        
+			        <li>Predictive analytics with ensemble learning
+			        	<ul>
+					        <li><a id="ai_ch03_1" href=/ai_ch03_1>Class Imbalance</a>
+					        	<ul class="green">
+							        <li>ai_utils.visualize_classifier</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.ensemble.ExtraTreesClassifier</li>
+							        <li>sklearn.metrics.classification_report</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.tree.DecisionTreeClassifier</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch03_2" href=/ai_ch03_2>Decision Trees</a>
+					        	<ul class="green">
+							        <li>ai_utils.visualize_classifier</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.ensemble.ExtraTreesClassifier</li>
+							        <li>sklearn.metrics.classification_report</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sys</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch03_3" href=/ai_ch03_3>Feature Importance</a>
+					        	<ul class="green">
+							        <li>base.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.datasets</li>
+							        <li>sklearn.ensemble.AdaBoostRegressor</li>
+							        <li>sklearn.metrics.explained_variance_score</li>
+							        <li>sklearn.metrics.mean_squared_error</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.tree.DecisionTreeRegressor</li>
+							        <li>sklearn.utils.shuffle</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch03_4" href=/ai_ch03_4>Grid Search</a>
+					        	<ul class="green">
+							        <li>numpy</li>
+							        <li>sklearn.ensemble.ExtraTreesClassifier</li>
+							        <li>sklearn.metrics.classification_report</li>
+							        <li>sklearn.model_selection.GridSearchCV</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch03_5" href=/ai_ch03_5>Random Forests</a>
+					        	<ul class="green">
+					        		<li>ai_utils.visualize_classifier</li>
+							        <li>argparse</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.ensemble.ExtraTreesClassifier</li>
+							        <li>sklearn.ensemble.RandomForestClassifier</li>
+							        <li>sklearn.metrics.classification_report</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+					        	</ul>
+					        </li>
+					        <li><a id="ai_ch03_6" href=/ai_ch03_6>Traffic Prediction</a>
+					        	<ul class="green">
+							        <li>numpy</li>
+							        <li>sklearn.ensemble.ExtraTreesRegressor</li>
+							        <li>sklearn.metrics.mean_absolute_error</li>
+							        <li>sklearn.model_selection.train_test_split</li>
+							        <li>sklearn.preprocessing</li>
+					        	</ul>
+					        </li>
+			        	</ul>
 			        </li>
-			        <li><a href=/ai_ch12_2>Audio Generator</a></li>
-					<li><a href=/ai_ch12_3>Audio Plotter</a></li>
-					<li><a href=/ai_ch12_4>Feature Extractor</a></li>
-					<li><a href=/ai_ch12_5>Frequency Transformer</a></li>
-					<li><a href=/ai_ch12_6>Speech Recognizer</a></li>
-					<li><a href=/ai_ch12_7>Synthesizer</a></li>
-	        	</ul>
-	        </li>
-	        <li>Object detection and tracking
-	        	<ul>
-			        <li><a href=/ai_ch13_1>Background Subtraction</a></li>
-					<li><a href=/ai_ch13_2>Camshift</a></li>
-					<li><a href=/ai_ch13_3>Colorspaces</a></li>
-					<li><a href=/ai_ch13_4>Eye Detector</a></li>
-					<li><a href=/ai_ch13_5>Face Detector</a></li>
-					<li><a href=/ai_ch13_6>Frame Diff</a></li>
-					<li><a href=/ai_ch13_7>Optical Flow</a></li>
-	        	</ul>
-	        </li>
-	        <li>Artificial neural networks
-	        	<ul>
-			        <li><a href=/ai_ch14_1>Character Visualizer</a></li>
-					<li><a href=/ai_ch14_2>Multilayer Neural Network</a></li>
-					<li><a href=/ai_ch14_3>OCR</a></li>
-					<li><a href=/ai_ch14_4>Perceptron Classifier</a></li>
-					<li><a href=/ai_ch14_5>Recurrent Neural Network</a></li>
-					<li><a href=/ai_ch14_6>Simple Neural Network</a></li>
-					<li><a href=/ai_ch14_7>Vector Quantizer</a></li>
-	        	</ul>
-	        </li>
-	        <li>Reinforcement learning
-	        	<ul>
-			        <li><a href=/ai_ch15_1>Balancer</a></li>
-					<li><a href=/ai_ch15_2>Run Environment</a></li>
-	        	</ul>
-	        </li>
-	        <li>Deep learning with convolutional neural networks
-	        	<ul>
-			        <li><a href=/ai_ch16_1>CNN</a></li>
-					<li><a href=/ai_ch16_2>Linear Regression</a></li>
-					<li><a href=/ai_ch16_2>Single Layer</a></li>
-	        	</ul>
-	        </li>
-	    </ol>
+			        <li>Detecting patterns with unsupervised learning
+			        	<ul>
+					        <li><a id="ai_ch04_1" href=/ai_ch04_1>Clustering Quality</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.cluster.KMeans</li>
+							        <li>sklearn.metrics</li>
+					        	</ul>
+					        </li>
+					        <li>GMM Classifier</li>
+							<li><a id="ai_ch04_3" href=/ai_ch04_3>KMeansy</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.cluster.KMeans</li>
+					        	</ul>
+							</li>
+							<li><a id="ai_ch04_4" href=/ai_ch04_4>Market Segmentation</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>csv</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.cluster.estimate_bandwidth</li>
+							        <li>sklearn.cluster.MeanShift</li>
+					        	</ul>
+							</li>
+							<li><a id="ai_ch04_5" href=/ai_ch04_5>Mean Shift</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.cluster.estimate_bandwidth</li>
+							        <li>sklearn.cluster.MeanShift</li>
+					        	</ul>
+							</li>
+							<li>Stocks</li>
+			        	</ul>
+			        </li>
+			        <li>Building recommender systems
+			        	<ul>
+					        <li>Collaborative Filtering</li>
+					        <li>Compute Scores</li>
+							<li><a id="ai_ch05_3" href=/ai_ch05_3>K-Nearest Neighbors</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>numpy</li>
+							        <li>sklearn.neighbors.NearestNeighbors</li>
+					        	</ul>
+							</li>
+							<li>Movie Recommender</li>
+							<li><a id="ai_ch05_5" href=/ai_ch05_5>Nearest Neighbor Classifier</a>
+					        	<ul class="green">
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>matplotlib.cm</li>
+							        <li>numpy</li>
+							        <li>sklearn.neighbors</li>
+					        	</ul>
+							</li>
+							<li><a id="ai_ch05_6" href=/ai_ch05_6>Pipeline Trainer</a>
+					        	<ul class="green">
+							        <li>sklearn.datasets.samples_generator</li>
+							        <li>sklearn.ensemble.ExtraTreesClassifier</li>
+							        <li>sklearn.feature_selection.f_regression</li>
+							        <li>sklearn.feature_selection.SelectKBest</li>
+							        <li>sklearn.pipeline.Pipeline</li>
+					        	</ul>
+							</li>
+			        	</ul>
+			        </li>
+			        <li>Logic programming
+			        	<ul>
+					        <li>Expression Matcher</li>
+					        <li>Family</li>
+							<li>Prime</li>
+							<li>Puzzle</li>
+							<li>States</li>
+			        	</ul>
+			        </li>
+			        <li>Heuristic search techniques
+			        	<ul>
+					        <li>Simple AI
+					        	<ol start="1">
+							        <li>Machine Learning
+							        	<ul>
+									        <li>Classifier</li>
+									        <li>Evaluation</li>
+									        <li>Metrics</li>
+									        <li>Models</li>
+									        <li>Reinforcement Learning</li>
+							        	</ul>
+							        </li>
+							        <li>Search
+							        	<ul>
+									        <li>Arc</li>
+									        <li>CSP</li>
+									        <li>Local</li>
+									        <li>Models</li>
+									        <li>Traditional</li>
+									        <li>Utils</li>
+									        <li>Viewers</li>
+									        <li>Web Viewer Server</li>
+							        	</ul>
+							        </li>
+							        <li>Environments</li>
+					        	</ol>
+					        </li>
+					        <li><a id="ai_ch07_2" href=/ai_ch07_2>Coloring</a>
+					        	<ul class="green">
+							        <li>ai_ch07.simpleai.search.backtrack</li>
+							        <li>ai_ch07.simpleai.search.CspProblem</li>
+					        	</ul>
+					        </li>
+							<li><a id="ai_ch07_3" href=/ai_ch07_3>Constrained Problem</a>
+					        	<ul class="green">
+							        <li>ai_ch07.simpleai.search.backtrack</li>
+							        <li>ai_ch07.simpleai.search.CspProblem</li>
+							        <li>ai_ch07.simpleai.search.HIGHEST_DEGREE_VARIABLE</li>
+							        <li>ai_ch07.simpleai.search.LEAST_CONSTRAINING_VALUE</li>
+							        <li>ai_ch07.simpleai.search.min_conflicts</li>
+							        <li>ai_ch07.simpleai.search.MOST_CONSTRAINED_VARIABLE</li>
+					        	</ul>
+							</li>
+							<li>Greedy Search</li>
+							<li>Maze</li>
+							<li><a id="ai_ch07_6" href=/ai_ch07_6>Puzzle</a>
+					        	<ul class="green">
+							        <li>ai_ch07.simpleai.search.astar</li>
+							        <li>ai_ch07.simpleai.search.SearchProblem</li>
+					        	</ul>
+							</li>
+			        	</ul>
+			        </li>
+			        <li>Genetic algorithm
+			        	<ul>
+					        <li>Bit Counter</li>
+					        <li>Robot</li>
+							<li>Symbol Regression</li>
+							<li>Visualization</li>
+			        	</ul>
+			        </li>
+			        <li>Building games with Artificial Intelligence
+			        	<ul>
+					        <li>Easy AI
+					        	<ol>
+							        <li>AI
+							        	<ul>
+									        <li>Dict TT</li>
+									        <li>DUAL</li>
+									        <li>Hashes</li>
+									        <li>Hash TT</li>
+									        <li>MT Driver</li>
+									        <li>Negamax</li>
+									        <li>Solving</li>
+									        <li>SSS</li>
+									        <li>TT</li>
+							        	</ul>
+							        </li>
+							        <li>Player</li>
+							        <li>Two Players Game</li>
+					        	</ol>		        
+					        </li>
+					        <li>Coins</li>
+							<li>Connect Four</li>
+							<li>Hexapawn</li>
+							<li>Tic Tac Toe</li>
+			        	</ul>
+			        </li>
+			        <li>Natural Language Processing
+			        	<ul>
+					        <li>Bag Of Words</li>
+					        <li>Category Predictor</li>
+							<li>Gender Identifier</li>
+							<li>Lemmatizer</li>
+							<li>Sentiment Analyzer</li>
+							<li><a id="ai_ch10_6" href=/ai_ch10_6>Stemmer</a>
+					        	<ul class="green">
+							        <li>nltk.stem.lancaster.LancasterStemmer</li>
+							        <li>nltk.stem.porter.PorterStemmer</li>
+							        <li>nltk.stem.snowball.SnowballStemmer</li>
+					        	</ul>
+							</li>
+							<li>Text Chunker</li>
+							<li>Tokenizer</li>
+							<li>Topic Modeler</li>
+			        	</ul>
+			        </li>
+			        <li>Probabilistic reasoning for sequential data
+			        	<ul>
+					        <li>CRF</li>
+					        <li>HMM</li>
+							<li><a id="ai_ch11_3" href=/ai_ch11_3>Operator</a>
+					        	<ul class="green">
+							        <li>ai_utils.read_data</li>
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>pandas</li>
+					        	</ul>
+							</li>
+							<li><a id="ai_ch11_4" href=/ai_ch11_4>Slicer</a>
+					        	<ul class="green">
+							        <li>ai_utils.read_data</li>
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+					        	</ul>
+							</li>
+							<li><a id="ai_ch11_5" href=/ai_ch11_5>Stats Extractor</a>
+					        	<ul class="green">
+							        <li>ai_utils.read_data</li>
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>pandas</li>
+					        	</ul>
+							</li>
+							<li>Stock Market</li>
+			        	</ul>
+			        </li>
+			        <li>Speech recognition
+			        	<ul>
+					        <li>Features
+					        	<ol>
+							        <li>Base</li>
+							        <li>Sigproc</li>
+					        	</ol>		        
+					        </li>
+					        <li><a id="ai_ch12_2" href=/ai_ch12_2>Audio Generator</a>
+					        	<ul class="green">
+							        <li>ai_utils.read_data</li>
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>scipy.io.wavfile.write</li>
+					        	</ul>
+					        </li>
+							<li><a id="ai_ch12_3" href=/ai_ch12_3>Audio Plotter</a>
+					        	<ul class="green">
+							        <li>ai_utils.read_data</li>
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>scipy.io.wavfile</li>
+					        	</ul>
+							</li>
+							<li>Feature Extractor</li>
+							<li><a id="ai_ch12_5" href=/ai_ch12_5>Frequency Transformer</a>
+					        	<ul class="green">
+							        <li>ai_utils.read_data</li>
+							        <li>base64.b64encode</li>
+							        <li>io.BytesIO</li>
+							        <li>matplotlib.pyplot</li>
+							        <li>scipy.io.wavfile</li>
+					        	</ul>
+							</li>
+							<li>Speech Recognizer</li>
+							<li>Synthesizer</li>
+			        	</ul>
+			        </li>
+			        <li>Object detection and tracking
+			        	<ul>
+					        <li>Background Subtraction</li>
+							<li>Camshift</li>
+							<li>Colorspaces</li>
+							<li>Eye Detector</li>
+							<li>Face Detector</li>
+							<li>Frame Diff</li>
+							<li>Optical Flow</li>
+			        	</ul>
+			        </li>
+			        <li>Artificial neural networks
+			        	<ul>
+					        <li>Character Visualizer</li>
+							<li>Multilayer Neural Network</li>
+							<li>OCR</li>
+							<li>Perceptron Classifier</li>
+							<li>Recurrent Neural Network</li>
+							<li>Simple Neural Network</li>
+							<li>Vector Quantizer</li>
+			        	</ul>
+			        </li>
+			        <li>Reinforcement learning
+			        	<ul>
+					        <li>Balancer</li>
+							<li>Run Environment</li>
+			        	</ul>
+			        </li>
+			        <li>Deep learning with convolutional neural networks
+			        	<ul>
+					        <li>CNN</li>
+							<li>Linear Regression</li>
+							<li>Single Layer</li>
+			        	</ul>
+			        </li>
+			    </ol>
+			</div>
+        	<div class="column">
+		        <ol start="1">
+			        <li>Module 01
+			        	<ul>
+					        <li>C01
+					        	<ol>
+							        <li><a id="ai_m01_ch01_1" href=/ai_m01_ch01_1>Markov Decision Process (MDP)</a>
+							        	<ul class="green">
+							        		<li>numpy</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>		        
+					        </li>
+					        <li>C02
+					        	<ol>
+							        <li>McCulloch Pitt Neuron</li>
+							        <li><a id="ai_m01_ch02_2" href=/ai_m01_ch02_2>Normalized Exponential Function</a>
+							        	<ul class="green">
+							        		<li>math</li>
+							        		<li>numpy</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>		        
+					        </li>
+					        <li>C03
+					        	<ol>
+							        <li>Decision Tree Priority Classification</li>
+							        <li>Markov Decision Process (MDP) - Convergence</li>
+					        	</ol>		        
+					        </li>
+					        <li>C04
+					        	<ol>
+							        <li>Feedforward Neural Network (FNN) with back propagation solution for XOR - Generalization</li>
+							        <li>Feedforward Neural Network (FNN) with back propagation solution for XOR - Vintage Tribute</li>
+					        	</ol>		        
+					        </li>
+					        <li>C05
+					        	<ol>
+							        <li>Feedforward Neural Network (FNN) with back propagation solution for XOR - Tensorflow Graph</li>
+							        <li>Feedforward Neural Network (FNN) with back propagation solution for XOR - Tensorboard</li>
+							        <li>Feedforward Neural Network (FNN) with back propagation solution for XOR - Tensorflow</li>
+					        	</ol>		        
+					        </li>
+					        <li>C06
+					        	<ol>
+							        <li><a id="ai_m01_ch06_1" href=/ai_m01_ch06_1>K-means clustering</a>
+							        	<ul class="green">
+							        		<li>base64.b64encode</li>
+							        		<li>io.BytesIO</li>
+							        		<li>matplotlib.pyplot</li>
+							        		<li>pandas</li>
+							        		<li>sklearn.cluster.KMeans</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>		        
+					        </li>
+					        <li>C07
+					        	<ol>
+							        <li>K-means clustering with Mini-Batch</li>
+							        <li><a id="ai_m01_ch07_2" href=/ai_m01_ch07_2>K-means clustering with Mini-Batch Shuffling</a>
+							        	<ul class="green">
+							        		<li>base64.b64encode</li>
+							        		<li>io.BytesIO</li>
+							        		<li>matplotlib.pyplot</li>
+							        		<li>pandas</li>
+							        		<li>sklearn.cluster.KMeans</li>
+							        	</ul>					        
+							        </li>
+					        	</ol>		        
+					        </li>
+					        <li>C08
+					        	<ol>
+							        <li>Google Translate</li>
+							        <li>Google Translate - Customized</li>
+							        <li>K-means Clustering</li>
+					        	</ol>		        
+					        </li>
+					        <li>C09
+					        	<ol>
+							        <li>Convolutional Neural Network (CNN)</li>
+							        <li>Edge Detection Kernel</li>
+							        <li>Rectified Linear Unit (ReLU)</li>
+					        	</ol>		        
+					        </li>
+					        <li>C10
+					        	<ol>
+							        <li>Google Tensor Classifier</li>
+							        <li>Tensorboard Reader</li>
+					        	</ol>		        
+					        </li>
+					        <li>C11
+					        	<ol>
+							        <li>CNN TDC Strategy</li>
+							        <li>CNN TDC Training</li>
+							        <li>Concept Strategy</li>
+							        <li>Read CNN Model</li>
+					        	</ol>		        
+					        </li>
+					        <li>C14
+					        	<ol>
+							        <li>Naive Bayes applied to Blockchains</li>
+					        	</ol>		        
+					        </li>
+					        <li>C15
+					        	<ol>
+							        <li>CRL MM Chatbot</li>
+					        	</ol>		        
+					        </li>
+					        <li>C16
+					        	<ol>
+							        <li>CNN Concept Strategy</li>
+							        <li>Personality Profiling with a Restricted Botzmannm Machine (RBM)</li>
+					        	</ol>		        
+					        </li>
+			        	</ul>
+			        </li>
+			        <li>Module 02
+			        	<ul>
+					        <li>C02</li>
+			        	</ul>
+			        	<ul>
+					        <li>C06
+					        	<ol>
+							        <li>Lyrics AI</li>
+							        <li>Music AI</li>
+					        	</ol>		        
+					        </li>
+			        	</ul>
+			        	<ul>
+					        <li>C07</li>
+			        	</ul>
+			        	<ul>
+					        <li>C08</li>
+			        	</ul>
+			        	<ul>
+					        <li>C09
+					        	<ol>
+							        <li>Object Detection Image AI</li>
+							        <li>Object Detection Open CSV</li>
+					        	</ol>		        
+					        </li>
+			        	</ul>
+			        	<ul>
+					        <li>C10
+					        	<ol>
+							        <li>Face Recognition</li>
+					        	</ol>
+					        </li>
+			        	</ul>
+			        </li>
+			        <li>Module 03
+			        	<ul>
+					        <li>C07
+					        	<ol>
+							        <li>GAN MNIST Structured</li>
+							        <li>GAN Simple</li>
+							        <li>Data Generation</li>
+					        	</ol>
+					        </li>
+					        <li>C10</li>
+			        	</ul>
+			        </li>
+			    </ol>        	
+			</div>
+        </div>
     </body>
 </html>

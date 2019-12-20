@@ -1,6 +1,9 @@
+#
+# Classification and regression using supervised learning : Regressor Multivar
+#
 import numpy as np
-from sklearn import linear_model
 import sklearn.metrics as sm
+from sklearn import linear_model
 from sklearn.preprocessing import PolynomialFeatures
 
 # Input file containing data

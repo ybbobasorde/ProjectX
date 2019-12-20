@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AI-CH04-1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/ml_ch00.css') }}">
+    </head>
+    <body>
+        <div class=center>
+        	<h2>Detecting patterns with unsupervised learning </h2>
+        	<br><h3>Clustering Quality</h3>
+
+			<p>
+        	{% for result in ai04_1_url1 %}
+        		{{ result }} <br><br>
+        	{% endfor %}<br>
+        	{{ ai04_1_url4 }}    			
+   			</p>	
+   			
+        	<img src="data:image/png;base64, {{ ai04_1_plot_url1 }}">
+
+        	<br><br><a href="/#ai_ch04_1">Home</a>
+        </div>
+    </body>
+</html>

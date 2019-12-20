@@ -1,4 +1,9 @@
 eclipse.preferences.version=1
+encoding//src/Chapter00/ai_ch07/simpleai/search/__init__.py=utf-8
+encoding//src/Chapter00/ai_ch07/simpleai/search/arc.py=utf-8
+encoding//src/Chapter00/ai_ch07/simpleai/search/csp.py=utf-8
+encoding//src/Chapter00/ai_ch07/simpleai/search/local.py=utf-8
+encoding//src/Chapter00/ai_ch07/simpleai/search/traditional.py=utf-8
 encoding//src/Chapter00/ml_ch02/ml_ch02.py=utf-8
 encoding//src/Chapter00/ml_ch03/ml_ch03.py=utf-8
 encoding//src/Chapter00/ml_ch04/ml_ch04.py=utf-8
